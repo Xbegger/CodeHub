@@ -44,14 +44,41 @@ http_get_v3 = Template(name='HTTP_GET_V3', fields=[
 
 
 #Target
-name = 'test'
+##setup()
+target_name = 'test_target'
 host = 'localhost'
 port = 8080
 timeout = 10000
-target = TCPTarget.TcpTarget(name, host, port)
+pre_test_num = 5
+post_test_num = 5
+target = TCPTarget.TcpTarget(target_name, host, port)
+##pre_test(test_num)
+target.pre_test(pre_test_num)
+##transmit
+data = ''
+target._send_to_target(data)
+receiveData = target._receive_from_target()
+##post_test(test_num)
+target.post_test(post_test_num)
+##get_report()
+report_target = target.report
 
-name = 'test'
-controller = Controller.LocalProcessController()
+#Controller
+##setup()
+controller_name = 'test_controller'
+process_path = ''
+process_args = ''
+controller = Controller.LocalProcessController(controller_name)
+##pre_test(test_number)
+controller_test_number = 5
+
+controller.pre_test(controller_test_number)
+##post_test()
+controller.post_test()
+##get_report()
+report_controller = controller.report
+##teardown()
+controller.teardown()
 
 
 
