@@ -1,3 +1,4 @@
+from subprocess import HIGH_PRIORITY_CLASS
 from kitty.model import *
 
 import TCPTarget
@@ -42,6 +43,15 @@ http_get_v3 = Template(name='HTTP_GET_V3', fields=[
 ])
 
 
+#Target
+name = 'test'
+host = 'localhost'
+port = 8080
+timeout = 10000
+target = TCPTarget.TcpTarget(name, host, port)
+
+name = 'test'
+controller = Controller.LocalProcessController()
 
 
 
