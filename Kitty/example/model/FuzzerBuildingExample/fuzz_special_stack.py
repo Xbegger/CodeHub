@@ -63,6 +63,7 @@ controller = MyClientController()
 ##      为目标(Target)设置控制器
 target.set_controller(controller)
 
+
 model = GraphModel()
 model.connect(get_name_response_template)
 
@@ -73,6 +74,7 @@ fuzzer = ClientFuzzer()
 fuzzer.set_model(model)
 fuzzer.set_target(target)
 fuzzer.set_interface(WebInterface())
+
 
 ##      启动客户端模糊测试
 ###         服务器栈
