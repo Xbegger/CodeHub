@@ -6,7 +6,7 @@ from kitty.fuzzers import ClientFuzzer
 from kitty.model import GraphModel
 from kitty.model import Template, Dynamic, String
 
-
+ 
 #   Modified Stack
 class MySpecialStack(object):
     def __init__(self):
@@ -26,6 +26,7 @@ class MySpecialStack(object):
             return resp
         name = '' if name_id not in self.names else self.names[name_id]
         return struct.pack('I', name_id) + name
+
 
 
 

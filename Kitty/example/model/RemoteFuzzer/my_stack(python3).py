@@ -24,7 +24,7 @@ class MySpecialStack(object):
         name = '' if name_id not in self.names else self.names[name_id]
         return struct.pack('I', name_id) + name
     
-fuzzer = RpcClient(host='127.0.0.1', port=26010)
+fuzzer = RpcClient(host='localhost', port=26010)
 
 my_stack = MySpecialStack()
 my_stack.set_fuzzer(fuzzer)
