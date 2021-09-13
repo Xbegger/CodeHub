@@ -1,0 +1,60 @@
+[2021-09-13 08:34:57,561] [INFO] [base._load_session] -> No session loaded
+[2021-09-13 08:34:57,564] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: ClientTarget
+                 UI: WebInterface listening on 127.0.0.1:26000
+                 Log: ./kittylogs/kitty_20210913-083457.log
+
+                 Total possible mutation count: 91
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-09-13 08:34:57,565] [INFO] [base.start] -> Performing environment test
+[2021-09-13 08:34:57,568] [INFO] [base._test_info] -> Current test: 0
+[2021-09-13 08:35:00,569] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:00,570] [WARNING] [base.post_test] -> Test 0 status: error
+[2021-09-13 08:35:00,571] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:00,577] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:00,579] [INFO] [base._test_info] -> Current test: 1
+[2021-09-13 08:35:03,579] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:03,580] [WARNING] [base.post_test] -> Test 1 status: error
+[2021-09-13 08:35:03,581] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:03,587] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:03,590] [INFO] [base._test_info] -> Current test: 2
+[2021-09-13 08:35:06,591] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:06,591] [WARNING] [base.post_test] -> Test 2 status: error
+[2021-09-13 08:35:06,592] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:06,599] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:06,601] [INFO] [base._test_info] -> Current test: 3
+[2021-09-13 08:35:09,603] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:09,604] [WARNING] [base.post_test] -> Test 3 status: error
+[2021-09-13 08:35:09,605] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:09,607] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:09,609] [INFO] [base._test_info] -> Current test: 4
+[2021-09-13 08:35:12,609] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:12,610] [WARNING] [base.post_test] -> Test 4 status: error
+[2021-09-13 08:35:12,611] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:12,617] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:12,620] [INFO] [base._test_info] -> Current test: 5
+[2021-09-13 08:35:15,622] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:15,623] [WARNING] [base.post_test] -> Test 5 status: error
+[2021-09-13 08:35:15,624] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:15,630] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:15,634] [INFO] [base._test_info] -> Current test: 6
+[2021-09-13 08:35:18,635] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:18,636] [WARNING] [base.post_test] -> Test 6 status: error
+[2021-09-13 08:35:18,637] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:18,642] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:18,643] [INFO] [base._test_info] -> Current test: 7
+[2021-09-13 08:35:21,644] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:21,645] [WARNING] [base.post_test] -> Test 7 status: error
+[2021-09-13 08:35:21,646] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:21,653] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:21,654] [INFO] [base._test_info] -> Current test: 8
+[2021-09-13 08:35:24,655] [ERROR] [client.trigger] -> Failure: trigger timed out
+[2021-09-13 08:35:24,656] [WARNING] [base.post_test] -> Test 8 status: error
+[2021-09-13 08:35:24,657] [WARNING] [base.post_test] -> Reason: trigger timed out
+[2021-09-13 08:35:24,665] [WARNING] [base._post_test] -> !! Failure detected !!
+[2021-09-13 08:35:24,667] [INFO] [base._test_info] -> Current test: 9
