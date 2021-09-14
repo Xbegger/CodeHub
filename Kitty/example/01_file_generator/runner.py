@@ -31,7 +31,7 @@ t1 = Template(name='T1', fields=[
 #   Writes content to files 
 
 ##      Target
-path = './tmp'
+path = 'D:/CodeHub/Kitty/example/01_file_generator/'
 target = FileTarget('FileTarget', path, 'fuzzed')
 ##      Controller
 controller = EmptyController('EmptyController')

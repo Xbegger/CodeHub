@@ -20,7 +20,7 @@ def main():
     ])
 
     fuzzer = ClientFuzzer(name='Example 2 - Browser Fuzzer (Remote)')
-    fuzzer.set_interface(WebInterface(hosts='0.0.0.0'), port=26000)
+    fuzzer.set_interface(WebInterface(host='0.0.0.0', port=26000))
 
     target = ClientTarget(name='BrowserTarget')
 
@@ -38,8 +38,7 @@ def main():
         'BrowserController',
         'usr/bin/opera',
         ['http://localhost:8082/fuzzed'],
-        process_env=env
-    )
+        process_env=env)
 
     target.set_controller(controller)
     target.set_mutation_server_timeout(20)

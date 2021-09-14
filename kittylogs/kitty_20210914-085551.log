@@ -1,0 +1,35 @@
+[2021-09-14 08:55:52,631] [INFO] [base._load_session] -> No session loaded
+[2021-09-14 08:55:52,634] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: FileTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20210914-085551.log
+
+                 Total possible mutation count: 182
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-09-14 08:55:52,634] [INFO] [base.start] -> Performing environment test
+[2021-09-14 08:55:52,635] [INFO] [base._test_info] -> Current test: -1
+[2021-09-14 08:55:52,635] [INFO] [server.transmit] -> request(32): 5468652064656661756c7420737472696e67416e6f7468657220737472696e67
+[2021-09-14 08:55:52,636] [ERROR] [server.transmit] -> target.transmit - failure in send (exception: 'bytes' object has no attribute 'encode')
+[2021-09-14 08:55:52,636] [ERROR] [server.transmit] -> Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\Kitty\lib\site-packages\kitty\targets\server.py", line 93, in transmit
+    self._send_to_target(payload)
+  File "D:\windowsSoftware\Anaconda\envs\Kitty\lib\site-packages\katnip\targets\file.py", line 73, in _send_to_target
+    self.logger.debug('data (start): %s', data[:end].encode('hex'))
+AttributeError: 'bytes' object has no attribute 'encode'
+
+[2021-09-14 08:55:52,637] [WARNING] [base.post_test] -> Test -1 status: failed
+[2021-09-14 08:55:52,638] [WARNING] [base.post_test] -> Reason: failed to send payload: 'bytes' object has no attribute 'encode'
+[2021-09-14 08:55:52,638] [INFO] [server._test_environment] -> Environment test failed
+[2021-09-14 08:55:52,638] [ERROR] [base.start] -> Error occurred while fuzzing: Exception('Environment test failed')
+[2021-09-14 08:55:52,640] [ERROR] [base.start] -> Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\Kitty\lib\site-packages\kitty\fuzzers\base.py", line 385, in start
+    self._test_environment()
+  File "D:\windowsSoftware\Anaconda\envs\Kitty\lib\site-packages\kitty\fuzzers\server.py", line 54, in _test_environment
+    raise Exception('Environment test failed')
+Exception: Environment test failed
+

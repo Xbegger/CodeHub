@@ -11,12 +11,9 @@ It also demonstrate how to user kitty fuzzer command line options
 
 import docopt
 
-from kitty import controllers
-from kitty import fuzzers
-
 from kitty.model import Template, String, Delimiter, ENC_INT_DEC, Dword, Static
 from kitty.interfaces import WebInterface
-from kitty.fuzzers import ServerFuzzer, server
+from kitty.fuzzers import ServerFuzzer
 from kitty.model import GraphModel
 from kitty.targets.server import ServerTarget
 from kitty.controllers import EmptyController
