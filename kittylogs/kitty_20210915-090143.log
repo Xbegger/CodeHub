@@ -1,0 +1,2 @@
+[2021-09-15 09:01:50,808] [INFO] [base._load_session] -> No session loaded
+[2021-09-15 09:02:16,634] [WARNING] [base.start] -> called while fuzzer is running. ignoring.

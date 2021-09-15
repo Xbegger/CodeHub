@@ -49,7 +49,7 @@ def main():
     '''Tell the fuzzer to start fuzzing (it will trigger connections to the http server)'''
     agent.start()
 
-    server = MyHttpServer(('localhost', 8082), MyHttpServer, agent)
+    server = MyHttpServer(('localhost', 8082), MyHttpHandler, agent)
 
     while True:
         server.handle_request()

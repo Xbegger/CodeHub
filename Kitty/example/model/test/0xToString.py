@@ -1,5 +1,5 @@
 import binascii
-
+'''
 while True:
     string = input("请输入要转换的数字")
     num = int(string, 16)
@@ -12,5 +12,12 @@ while True:
     ans = str(bStr)
 
     print('对应的字符串为:' + ans)
+'''
 
+bNum = '0100'.encode('utf-8')
+print(bNum)
 
+temp = bytes.fromhex('0100')
+print(temp) 
+temp = temp.hex()
+print(temp)
