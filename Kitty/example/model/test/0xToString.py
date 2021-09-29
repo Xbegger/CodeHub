@@ -17,7 +17,7 @@ while True:
 bNum = '0100'.encode('utf-8')
 print(bNum)
 
-temp = bytes.fromhex('0100')
-print(temp) 
+temp = b'0123'
+print(type(temp), temp) 
 temp = temp.hex()
 print(temp)
