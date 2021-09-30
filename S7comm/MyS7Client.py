@@ -1,8 +1,12 @@
+# coding:utf-8
 from icssploit.clients.s7_client import S7Client
 from icssploit.protocols.s7comm import *
 from icssploit.protocols.cotp import *
 from scapy.supersocket import StreamSocket
+from scapy.fields import *
 import socket
+import struct
+import binascii
 
 
 class MyS7Client(S7Client):
@@ -10,9 +14,10 @@ class MyS7Client(S7Client):
         super(MyS7Client, self).__init__(name, ip, port, src_tsap, rack, slot, timeout)
         
         # Connect MaxAmQ setting
+        self.struct = struct.Struct('!H')
         self.callingMaxAmQ = callingMaxAmQ
         self.calledMaxAmQ = calledMaxAmQ
-        self.NotResponsePacket = {}
+        self.NotResponsePackets = {}
 
     def connect(self):
         sock = socket.socket()
@@ -30,13 +35,16 @@ class MyS7Client(S7Client):
         packet1.Parameters[2].Parameter = self._dst_tsap
         self.send_receive_packet(packet1)
         packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job",
-                                                    Parameters=S7SetConParameter(MaxAmQCalling=self.calledMaxAmQ,
-                                                                                 MaxAmQCalled=self.calledMaxAmQ))
+                                                    Parameters=S7SetConParameter(MaxAmQcalling=self.calledMaxAmQ,
+                                                                                 MaxAmQcalled=self.calledMaxAmQ))
         rsp2 = self.send_receive_s7_packet(packet2)
         if rsp2:
             self._connected = True
         # Todo: Need get pdu length from rsp2
 
+
+    def close(self):
+        self._connection.close()
 
     def send_s7_packet(self, packet):
         if self._connection:
@@ -44,10 +52,10 @@ class MyS7Client(S7Client):
 
             # add not response packet
             pdur = packet.payload.payload.PDUR
-            if pdur in self.NotResponsePacket.keys():
-                self.logger.error("<send_s7_packet error>:PDUr correspond is already in NotResponsePacket!")
+            if pdur in self.NotResponsePackets.keys():
+                self.logger.error("<send_s7_packet error>:PDUr correspond is already in NotResponsePackets!")
             else:
-                self.NotResponsePacket[pdur] = packet
+                self.NotResponsePackets[pdur] = packet
 
             # send packet
             try:
@@ -67,13 +75,13 @@ class MyS7Client(S7Client):
                 rsp = self._connection.recv()
                 if rsp:
                     rsp = TPKT(str(rsp))
-                else:
-                    # delete received pdur correspond NotResponsePacket
-                    if pdur in self.NotResponsePacket.keys():
+
+                    # delete received pdur correspond NotResponsePackets
+                    if pdur in self.NotResponsePackets.keys():
                         pdur = rsp.payload.payload.PDUR
-                        del self.NotResponsePacket[pdur]
+                        del self.NotResponsePackets[pdur]
                     else:
-                        self.logger.error("<receive_s7_packet error>PDUr is not in NotResponsePacket!")
+                        self.logger.error("<receive_s7_packet error>PDUr is not in NotResponsePackets!")
                 
                 return rsp
 
