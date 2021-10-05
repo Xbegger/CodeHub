@@ -17,7 +17,8 @@ class MyS7Client(S7Client):
         self.struct = struct.Struct('!H')
         self.callingMaxAmQ = callingMaxAmQ
         self.calledMaxAmQ = calledMaxAmQ
-        self.NotResponsePackets = {}
+        self.notResponsePackets = []
+
 
     def connect(self):
         sock = socket.socket()
@@ -52,11 +53,10 @@ class MyS7Client(S7Client):
 
             # add not response packet
             pdur = packet.payload.payload.PDUR
-            if pdur in self.NotResponsePackets.keys():
-                self.logger.error("<send_s7_packet error>:PDUr correspond is already in NotResponsePackets!")
+            if pdur in notResponsePackets:
+                client.logger.error("<send_s7_packet error>:PDUr correspond is already in NotResponsePackets!")
             else:
-                self.NotResponsePackets[pdur] = packet
-
+                notResponsePackets.append(pdur)
             # send packet
             try:
                 self._connection.send(packet)
@@ -77,9 +77,9 @@ class MyS7Client(S7Client):
                     rsp = TPKT(str(rsp))
 
                     # delete received pdur correspond NotResponsePackets
-                    if pdur in self.NotResponsePackets.keys():
+                    if pdur in self.notResponsePackets:
                         pdur = rsp.payload.payload.PDUR
-                        del self.NotResponsePackets[pdur]
+                        self.notResponsePackets.remove(pdur)
                     else:
                         self.logger.error("<receive_s7_packet error>PDUr is not in NotResponsePackets!")
                 
