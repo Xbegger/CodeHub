@@ -18,33 +18,37 @@ def bLocateCrush( orignalPackets):
     # choose half of packets
     startPktList = 0
     pktListLength = len(pktList)
+    endPktList = pktListLength
     
-    
-    stack.append(startPktList + pktListLength + 1)
+    # init stack
+    stack = list()
+    stack.append(endPktList)
     stack.append(startPktList)
-    while len(stack) > 0:
+    chosenPktLength = endPktList - startPktList
+
+    while len(stack) > 0 and (chosenPktLength >= 1):
         # choose packets
         startPktList = stack.pop()
+        endPktList = stack.pop()
 
-        if len(stack > 0):
-            endPktList = stack.pop() - 1
-            stack.append(endPktList + 1)
-        else:
-            endPktList = pktListLength
+        chosenPktLength = (endPktList - startPktList) / 2
+        chosenPkt = pktList[startPktList : startPktList + chosenPktLength]
 
-        chosenPkt = pktList[startPktList: endPktList]
-        chosenPktLength = endPktList - startPktList
+        # append have not be chosen packets
+        stack.append(endPktList)
+        stack.append(startPktList + chosenPktLength)
         # send chosen packets
-        #flag, tempPkt = sendTestPackets(client, chosenPkt)
-        flag = True
+        flag, tempPkt = sendTestPackets(client, chosenPkt)
+
         # detect crush
-        if flag == True:
-            # first half has not crush
-            startPktList = startPktList + chosenPktLength
-        # next test packets length
-        pktListLength = pktListLength / 2
-        # choose half of packets
-        chosenPkt = pktList[startPktList: startPktList+pktListLength]
+        if flag == False:
+            # first half has crush
+            stack.append(startPktList + chosenPktLength)
+            stack.append(startPktList)
+            # if find the crush packet
+            if chosenPktLength == 1:
+                break
+
     
     return chosenPkt
 
@@ -90,7 +94,9 @@ heartBeatDetectThread = threading.Thread(target=heartBeatDetect, args=(PLC_IP,))
 heartBeatDetectThread.setDaemon(True)
 heartBeatDetectThread.start()
 
-bLocateCrush(range(20))
+packets = []
+bLocateCrush(packets)
+
 
 # read_items = [("DB1", "0.0", "byte", 1)]
 
