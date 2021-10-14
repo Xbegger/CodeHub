@@ -1,3 +1,4 @@
+# coding:utf-8
 from re import search
 from kitty import fuzzers
 from kitty.model import Template
@@ -11,7 +12,7 @@ from icssploit.protocols.s7comm import *
 import binascii
 
 #   snap7 server 配置信息
-target_ip = '172.16.22.131'
+target_ip = '192.168.1.136'
 target_port = 102
 
 randseed = int(RandShort())
