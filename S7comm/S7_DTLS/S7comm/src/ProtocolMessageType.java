@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public enum ProtocolMessageType {
+package S7comm;
+
+public enum ProtocolMessageType {
+    JOB((byte) 1),
+
 }

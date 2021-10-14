@@ -43,6 +43,6 @@ class MyS7Client(S7Client):
             self._connected = True
         # Todo: Need get pdu length from rsp2
 
-target = MyS7Client(name="test", ip="192.168.178.21", rack=0, slot=3)
+target = MyS7Client(name="test", ip="192.168.20.128", rack=0, slot=3)
 
 target.connect()
