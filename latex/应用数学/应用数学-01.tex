@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage[fleqn]{amsmath}
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+
+
+\begin{enumerate}
+    \item 求随机相位正弦波的均值函数、方差函数和自相关函数。
+        \begin{gather*}
+            X(t) = a\sin (\omega t + \Theta),t\in T=(-\infty, +\infty), \Theta \in (0, 2\pi) \\
+            \mu_X(t)= E[X(t)] = E[a\sin (\omega t + \Theta)] = a E[\sin (\omega t + \Theta)] \\
+                    = a \int_{0}^{2\pi} \sin (\omega t + \Theta) P(\Theta) \mathrm{d}\Theta = \frac{a}{2\pi} \left[ -\cos (\omega t + \Theta) \right]_{0}^{2\pi} = 0 \\          
+            \sigma^2 (X(t))= E\left\{\left[X(t)- \mu_X(t)\right]^2 \right\}=E[X(t)^2]= E(a^2 \sin^2(\omega t + \Theta)) \\
+                           = a^2 E \left\{ \frac{1 - \cos\left[2 (\omega t + \Theta) \right]}{2} \right\} = \frac{a^2}{2}\left[ 1 - E(\cos (2\omega t + 2 \Theta))\right] \\
+            E(\cos (2\omega t + 2 \Theta)) = \int_{0}^{2\pi} \cos (2\omega t + 2 \Theta) \mathrm{d}\Theta = \left[\frac{sin(2\omega t + 2 \Theta)}{2}\right]_{0}^{2\pi}= 0\\
+            \Rightarrow \sigma^2 (X(t)) = \frac{a^2}{2} \\
+            R_{xx}(t_1, t_2)= E\left[X(t_1)X(t_2)\right] = E\left[a\sin (\omega t_1 + \Theta) a\sin (\omega t_2 + \Theta)\right]\\
+                            = a^2 E[\cos(\omega(t_1 - t_2)) - \cos(\omega(t_1 + t_2) + 2\Theta)] = a^2 \left\{ \cos(w(t_1-t_2)) - E\left[\cos(\omega(t_1 + t_2) + 2\Theta)\right] \right\} \\
+                            = a^2 \cos\left[w (t_1 -t_2)\right]
+        \end{gather*}
+    \item 设$X(t)=A\cos \omega t + B\sin \omega t, t\in T=(-\infty, +\infty) $,其中A、B是相互独立，且都服从正态分布$N(0, \delta ^2)$的随机变量，$\omega$是实常数。试证明$X(t)$是正态过程，并求它的均值函数和自相关函数。
+        \begin{gather*}
+            \text{对于随机变量}X(t),\sin \omega t 与 \cos \omega t \text{是实常数。}\\
+            \text{A,B是相互独立且都服从正态分布的随机变量}\\
+            \text{根据定理:相互独立的正态随机变量的线性组合也满足正态分布}\\
+            \Rightarrow X(t) \text{也是正态随机变量,对于随机变量}t\in T, \text{随机过程$X(t)$是正态过程}\\
+            \\
+            \mu_X(t) = E\left[X(t)\right] = E\left[A\cos \omega t + B \sin \omega t\right] = E(A \cos \omega t) + E( B \sin \omega t) \\
+                     = \cos \omega t E(A) + \sin \omega t E(B) = 0\\
+            \\
+            R_{xx}(t_1, t_2) = E\left[ X(t_1) X(t_2) \right] = E\left[(A\cos \omega t_1 + B \sin \omega t_1)(A\cos \omega t_2 + B \sin \omega t_2) \right]\\
+            =E(A^2 \cos \omega t_1 \cos \omega t_2 + AB\cos \omega t_1 \sin \omega t_2 + AB \sin \omega t_1 \cos \omega t_2 + B^2 \sin \omega t_1 \sin \omega t_2) \\
+            = \cos \omega t_1 \cos \omega t_2 E(A^2) + \sin \omega t_1 \sin \omega t_2 E(B^2) \\
+            D(x) = E(x^2) - E(x)^2\\
+            \Rightarrow R_{xx}(t_1, t_2) = \cos \omega t_1 \cos \omega t_2  \left[D(A) + E(A)^2\right] + \sin \omega t_1 \sin \omega t_2 E(B^2)\left[D(B) + E(B)^2\right]\\
+            \qquad = \delta ^2 (\cos \omega t_1 \cos \omega t_2  + \sin \omega t_1 \sin \omega t_2 ) = \delta^2 \cos \omega (t_1 - t_2)
+        \end{gather*}
+\end{enumerate}
+\end{document}
+

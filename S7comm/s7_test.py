@@ -1,10 +1,11 @@
 # coding:utf-8
-
+from icssploit.clients.base import Base
 from icssploit.protocols.cotp import *
 from icssploit.protocols.s7comm import *
 from scapy.supersocket import StreamSocket
 import socket
 from icssploit.clients.s7_client import S7Client
+import threading
 
 
 class MyS7Client(S7Client):
@@ -43,16 +44,35 @@ class MyS7Client(S7Client):
             self._connected = True
         # Todo: Need get pdu length from rsp2
 
-<<<<<<< HEAD
-target = MyS7Client(name="test", ip="192.168.1.136", rack=0, slot=3)
-=======
 target = MyS7Client(name="test", ip="192.168.20.128", rack=0, slot=3)
->>>>>>> cf1136a6c8eed08e3fe1e25d64e19428e87df272
 
 target.connect()
 
 
-a = input("continue")
-packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
-target.send_s7_packet(packet2)
+
+
+def sendPacket(start):
+    for i in range(start, start+1000):
+        read_items = [("DB1", str(i % 1000) + ".0", "byte", 1)]
+        target.read_var(read_items)
+
+for i in range(10):
+    thread = threading.Thread(target=sendPacket, args=(i,))
+    thread.setDaemon(True)
+    thread.start()
+
+# write_items = []
+# for i in range(10000):
+    # write_item = ("DB1",  str(i) + ".0", "byte", [10, 20, 30])
+    # write_items.append(write_item)
+    # if( i == 10):
+    #     read_items = [("000", str(i) + ".0", "byte", 1)]
+    #     packet = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", 
+                                                                #   ))
+    #     target.send_receive_packet(packet)
+    # else:
+        # read_items = [("DB1", str(i % 1000) + ".0", "byte", 1)]
+        # target.read_var(read_items)
+#         target.write_var(write_items)
+#         target.get_target_info()
 
