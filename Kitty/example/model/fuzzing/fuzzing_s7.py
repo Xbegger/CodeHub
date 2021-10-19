@@ -5,8 +5,7 @@ from kitty.fuzzers import ServerFuzzer
 from kitty.interfaces import WebInterface
 from kitty.model import GraphModel
 from katnip.targets.tcp import TcpTarget
-import scapy
-from scapy.volatile import RandShort,
+from katnip.model.low_level.scapy import *
 from icssploit.protocols.cotp import *
 from icssploit.protocols.s7comm import *
 

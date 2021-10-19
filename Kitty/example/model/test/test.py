@@ -1,9 +1,18 @@
+import threading
+import time
 
-str = '\x03\x00\x00\x19\x02\xf0\x802\x01\x00\x00\x02\x00\x00\x08\x00\x00\xf0\x00\x00\n\x00\n\x01\xe0'
+def run(n):
+    print("task", n)
+    time.sleep(1)
+    print('2s\n')
+    time.sleep(1)
+    print('1s\n')
+    time.sleep(1)
+    print('0s\n')
+    time.sleep(1)
 
-
-
-for i in str:
-
-    print(i.encode('hex'))
-
+if __name__ == '__main__':
+    t1 = threading.Thread(target=run, args=("t1",))
+    t2 = threading.Thread(target=run, args=("t2",))
+    t1.start()
+    t2.start()

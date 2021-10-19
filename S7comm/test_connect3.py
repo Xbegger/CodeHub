@@ -69,38 +69,13 @@ class MyS7Client(S7Client):
             str = str + c.encode('hex')
         return str
 
+target = MyS7Client(name="test", ip="192.168.178.23", rack=0, slot=3)
 
-    def receive(self):
-        while( True):
-            
-            pkts = sniff(opened_socket=self._connection,prn = lambda pkt:"\n[Recive  ] %s \n" % (self.packetStr_to_hex(pkt.original)))
-
-            # for pkt in pkts:
-                # print(self.packetStr_to_hex(pkt.original))
+target.connect()
 
 
+a = input("continue")
 
-def sendMethod(target):
-    while True:
-        time.sleep(1)
-        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))/S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
-        target.send_s7_packet(packet2)
-
-
-if __name__ == '__main__':
-    target = MyS7Client(name="test", ip="192.168.178.23", rack=0, slot=3)
-
-    target.connect()
-    
-    sendThread = threading.Thread(target=sendMethod, args=(target,))
-    recvThread = threading.Thread(target=target.receive)
-    # recvThread.setDaemon(True)
-    # a = input("continue")
-    
-    # sendThread.setDaemon(True)
-
-    recvThread.start()
-    sendThread.start()
-
-
+packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))/S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
+target.send_s7_packet(packet2)
 

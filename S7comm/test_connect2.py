@@ -16,4 +16,4 @@ packet2 = S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x00
 
 
 # 发送数据
-udpClientSocket.sendto(raw(packet2), ADDRESS)
+udpClientSocket.sendto(bytearray.fromhex('1234567890123456789012345678901234567890123456789012345678901234567890'), ADDRESS)

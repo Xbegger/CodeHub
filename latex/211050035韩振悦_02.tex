@@ -1,0 +1,57 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    1.开始接受服务时间服从参数为$\lambda$的泊松分布过程,接受服务的的时长服从参数为$\lambda$的指数分布。\\
+    已知每个人接受服务的时间是独立的并服从均值为20分钟的指数分布
+    \begin{gather*}
+        \frac{1}{\lambda} = 20 \Rightarrow  \lambda = \frac{1}{20}, 
+        P(N(t) = n) = e^{-\frac{t}{20}} \frac{(\frac{t}{20})^n}{n!},E(N(t))=\frac{t}{20} \\
+        E(N(4 \times 60 ))= 12, P(N(4 * 60) = 9) = e^{-12} \frac{12^9}{9!} \approx 0.0874  
+    \end{gather*}
+    2.已知天文台观测到的流星流是一个泊松分布过程，且平均每小时观察到3颗流星\\
+    \begin{gather*}
+        \Rightarrow E(N(1))= \lambda 1 = 3 ,\lambda = 3,P(N(t) = n) = e^{-3t} \frac{(3t)^n}{n!}\\
+        P(N(4) = 0) = e^{-3 \times 4} \frac{(3 \times 4)^0}{0!} = e^{-12}
+    \end{gather*}
+    3.已知乘客按照强度为$\lambda$强度的泊松分布过程到达火车站\\
+    \begin{gather*}
+        \Rightarrow P(N(t) = n) = e^{-\lambda t} \frac{(\lambda t)^n}{n!}\\
+        E(\sum_{i=1}^{N(t)}(t-T_i)) = \sum_{n=0}^{+\infty} E(\sum_{i=1}^{N(t)}(t-T_i) | N(t)=n)P(N(t) =n)\\
+        =\sum_{n=0}^{+\infty} E(\sum_{i=1}^{n} (t-T_i)) e^{-\lambda t} \frac{(\lambda t)^n}{n!}
+        =\sum_{n=0}^{+\infty} (n\cdot t - \sum_{i=1}^{n} E(T_i)) e^{-\lambda t} \frac{(\lambda t)^n}{n!}\\
+        =\sum_{n=0}^{+\infty} (n \cdot  t - n \cdot \lambda \cdot t)  e^{-\lambda t} \frac{(\lambda t)^n}{n!}
+        = t \cdot (1-\lambda) \cdot  e^{-\lambda t} \sum_{n=0}^{+\infty} n \cdot \frac{(\lambda t)^n}{n!}\\
+        = t \cdot (1 - \lambda) \cdot e^{-\lambda t} \cdot (\lambda t) \cdot e^{\lambda t}
+        = \lambda t^2 (1 - \lambda)
+    \end{gather*}
+    4.已知顾客以6分钟的平均速率进入某商场，这一过程可以用泊松分布过程来描述。
+    \begin{gather*}
+        \Rightarrow \text{设$N_1(t)$表示在时间$(0,t])$进入商城的人数,服从强度为6的泊松分布过程}\\
+        P(N_1(t) = n) = e^{-6t} \frac{(6t)^n}{n!}
+    \end{gather*}
+    已知进入该商场的每位顾客买东西的概率为0.9
+    \begin{gather*}
+        \Rightarrow \text{设$Y(i)$表示第i位顾客是否购买东西，1表示买，0表示不买;}
+        \text{$Y(i)$服从于概率为0.9的$0-1$分布} \\  
+        \text{设$X(t)$表示t时刻在商场买东西的顾客数}, X(t) = \sum_{i=0}^{N_1(t)} Y(i)\\
+        E(X(t)) = \sum^{+\infty}_{n = 0} E(X(t) | N_1(t)=n) P(N_1(t)=n)
+        =\sum_{n=0} ^{+\infty}E(\sum_{i=0}^{n}Y(i))e^{-6t}\frac{(6t)^n}{n!}
+        = e^{-6t}\sum_{n=0}^{+\infty} n \cdot 0.9 \cdot \frac{(6t)^n}{n!}\\
+        = e^{-6t} \cdot 0.9 \cdot (6t) \cdot e^{6t} = 5.4t 
+    \end{gather*}
+\end{document}
