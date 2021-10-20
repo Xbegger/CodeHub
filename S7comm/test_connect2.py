@@ -4,12 +4,16 @@ from icssploit.protocols.s7comm import *
 import socket
 from scapy.compat import raw
 
+HOST = '192.168.178.23'
+PORT = 8888
 
-packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
+ADDRESS = (HOST, PORT)
 
-ip = "192.168.1.13"
-server_address = (ip, 102)
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-# input("continue")
+udpClientSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-s.sendto(raw(packet2), server_address)
+packet2 = S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
+
+
+
+# 发送数据
+udpClientSocket.sendto(bytearray.fromhex('1234567890123456789012345678901234567890123456789012345678901234567890'), ADDRESS)
