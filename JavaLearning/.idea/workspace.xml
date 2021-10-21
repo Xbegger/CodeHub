@@ -47,20 +47,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="应用程序.Emplyee2">
-    <configuration name="DataDefaultValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basic.DataDefaultValue" />
-      <module name="JavaLearning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basic.VariableType.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hsp_Java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.EscapeCharacterPrint">
     <configuration name="Emplpyee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basic.VariableType.Emplpyee" />
       <module name="JavaLearning" />
@@ -87,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypeConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basic.TypeConversion" />
+    <configuration name="EscapeCharacter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.EscapeCharacter" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basic.VariableType.*" />
+          <option name="PATTERN" value="hsp_Java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +92,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VariableType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basic.VariableType.VariableType" />
+    <configuration name="EscapeCharacterPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.EscapeCharacterPrint" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basic.VariableType.*" />
+          <option name="PATTERN" value="hsp_Java.courseExercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basic.HelloWorld" />
+      <module name="JavaLearning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.EscapeCharacterPrint" />
+        <item itemvalue="应用程序.EscapeCharacter" />
+        <item itemvalue="应用程序.HelloWorld" />
         <item itemvalue="应用程序.Emplyee2" />
         <item itemvalue="应用程序.Emplpyee" />
-        <item itemvalue="应用程序.VariableType" />
-        <item itemvalue="应用程序.TypeConversion" />
-        <item itemvalue="应用程序.DataDefaultValue" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +141,8 @@
       <workItem from="1634431997822" duration="6238000" />
       <workItem from="1634455227063" duration="43000" />
       <workItem from="1634455280576" duration="663000" />
+      <workItem from="1634716031541" duration="1922000" />
+      <workItem from="1634795097402" duration="7713000" />
     </task>
     <servers />
   </component>

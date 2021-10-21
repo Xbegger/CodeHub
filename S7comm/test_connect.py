@@ -41,7 +41,7 @@ class MyS7Client(S7Client):
         packet1.Parameters[1].Parameter = self._src_tsap
         packet1.Parameters[2].Parameter = self._dst_tsap
         self.send_receive_packet(packet1)
-        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A, PDULength=0x00f0))
+        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A, PDULength=0x0001))
         rsp2 = self.send_receive_s7_packet(packet2)
         if rsp2:
             self._connected = True
@@ -72,7 +72,6 @@ class MyS7Client(S7Client):
 
     def receive(self):
         while( True):
-            
             pkts = sniff(opened_socket=self._connection,prn = lambda pkt:"\n[Recive  ] %s \n" % (self.packetStr_to_hex(pkt.original)))
 
             # for pkt in pkts:
@@ -83,7 +82,7 @@ class MyS7Client(S7Client):
 def sendMethod(target):
     while True:
         time.sleep(1)
-        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))/S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
+        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
         target.send_s7_packet(packet2)
 
 
