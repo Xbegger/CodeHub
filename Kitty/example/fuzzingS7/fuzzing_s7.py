@@ -1,3 +1,4 @@
+# coding:utf-8
 from re import search
 from kitty import fuzzers
 from kitty.model import Template
@@ -11,13 +12,13 @@ from icssploit.protocols.s7comm import *
 import binascii
 
 #   snap7 server 配置信息
-target_ip = '172.16.22.131'
+target_ip = '192.168.1.188'
 target_port = 102
 
 randseed = int(RandShort())
 #   COTP CR 请求的参数
-SRC_TSAP = '0100'
-DST_TSAP = '0103'
+SRC_TSAP = '0100'.encode('hex')
+DST_TSAP = '0103'.encode('hex')
 
 
 #   定义COTP CR 建立连接数据包

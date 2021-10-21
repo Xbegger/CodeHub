@@ -1,0 +1,109 @@
+[2021-10-18 11:59:19,684] [INFO] [base._load_session] -> No session loaded
+[2021-10-18 11:59:19,694] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20211018-115911.log
+
+                 Total possible mutation count: 1000
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-10-18 11:59:19,698] [INFO] [base.start] -> Performing environment test
+[2021-10-18 11:59:19,739] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:19,743] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:20,769] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:20,772] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:21,780] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:21,782] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:22,795] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:22,799] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:23,822] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:23,826] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:24,849] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:24,855] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:25,881] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:25,884] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:26,911] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:26,914] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:27,944] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:27,947] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:28,976] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 10065] 
+
+[2021-10-18 11:59:28,980] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-10-18 11:59:29,996] [INFO] [server._test_environment] -> Environment test failed
+[2021-10-18 11:59:29,997] [ERROR] [base.start] -> Error occurred while fuzzing: KittyException('TCPTarget: (pre_test) cannot connect to server (retries = 10',)
+[2021-10-18 11:59:30,003] [ERROR] [base.start] -> Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\base.py", line 385, in start
+    self._test_environment()
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\server.py", line 53, in _test_environment
+    if self._run_sequence(sequence):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\server.py", line 64, in _run_sequence
+    self._pre_test()
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\base.py", line 427, in _pre_test
+    self.target.pre_test(self.model.current_index())
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 65, in pre_test
+    raise(KittyException('TCPTarget: (pre_test) cannot connect to server (retries = %d' % retry_count))
+KittyException: TCPTarget: (pre_test) cannot connect to server (retries = 10
+

@@ -1,5 +1,5 @@
 # coding:utf-8
-from icssploit.clients.base import Base
+
 from icssploit.protocols.cotp import *
 from icssploit.protocols.s7comm import *
 from scapy.supersocket import StreamSocket
