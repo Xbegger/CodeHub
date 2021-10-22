@@ -1,3 +1,4 @@
+# coding:utf-8
 from re import search
 from kitty import fuzzers
 from kitty.model import Template
@@ -11,13 +12,13 @@ from icssploit.protocols.s7comm import *
 
 
 #   snap7 server 配置信息
-target_ip = '172.16.22.131'
+target_ip = '192.168.178.11'
 target_port = 102
 
 randseed = int(RandShort())
 #   COTP CR 请求的参数
-SRC_TSAP = "0100".encode('hex')
-DST_TSAP = "0102".encode('hex')
+SRC_TSAP = "0100".decode('hex')
+DST_TSAP = "0102".decode('hex')
 
 
 #   定义COTP CR 建立连接数据包
@@ -48,7 +49,7 @@ SETUP_COMM_PARAMETER_TEMPLATE = Template(name='setup comm template', fields=[
 #   定义需要Fuzzing的数据包结构，
 READ_SZL_PACKET = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
                                                       Parameters=S7ReadSZLParameterReq(),
-                                                      Data=S7ReadSZLDataReq(SZLID=RandShort(),
+                                                      Data=S7ReadSZLDataReq(SZLId=RandShort(),
                                                                             SZLIndex=RandShort()))
 #   定义READSZL_TEMPLATE为可以变异的结构，fuzzing的次数为1000
 READ_SZL_TEMPLATE = Template(name="read szl template", fields=[
