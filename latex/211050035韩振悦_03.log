@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  19 OCT 2021 14:59
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  26 OCT 2021 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**211050035韩振悦_02
-(./211050035韩振悦_02.tex
+**211050035韩振悦_03
+(./211050035韩振悦_03.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (d:/windowsSoftware/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -270,8 +270,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen189
 \Gm@layoutvoffset=\dimen190
 \Gm@dimlist=\toks21
-) (./211050035韩振悦_02.aux)
-\openout1 = `211050035韩振悦_02.aux'.
+) (./211050035韩振悦_03.aux)
+\openout1 = `211050035韩振悦_03.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -384,26 +384,31 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 19.
+(Font)              size <10.95> substituted on input line 21.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Overfull \hbox (60.09552pt too wide) detected at line 56
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+
+ []
+
+
+Overfull \hbox (13.76437pt too wide) detected at line 49
 []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
  []
 
 [1
 
-] (./211050035韩振悦_02.aux)
+] (./211050035韩振悦_03.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
@@ -412,10 +417,10 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  6867 strings out of 476919
  188420 string characters out of 5818255
- 538932 words of memory out of 5000000
+ 542932 words of memory out of 5000000
  26802 multiletter control sequences out of 15000+600000
  405136 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,13n,104p,371b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,15n,104p,371b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 211050035韩振悦_02.pdf (1 page).
+Output written on 211050035韩振悦_03.pdf (1 page).

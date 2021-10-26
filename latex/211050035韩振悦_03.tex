@@ -1,0 +1,65 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    1.已知今日有雨明日也有雨的概率为0.7。今日无雨明日有雨的概率为0.5。\\
+    可得转移矩阵
+    \begin{gather*}
+        \begin{matrix}
+                    & \text{明日无雨} & \text{明日有雨}\\
+            \text{今日无雨} & 0.5 & 0.5\\
+            \text{今日有雨} &0.3 & 0.7    
+        \end{matrix}
+        \\
+        \text{要求星期一有雨，星期三也有雨的概率，即求} P_{1,1}^{2}\\
+        \text{计算可得} P_{1,1}^{2} = 0.64
+    \end{gather*}
+
+
+    2.由题意可知转移矩阵为状态为$0 \sim n$ 的 $n \times n$ 矩阵。且有$p_{0,0} = 1,p_{n, n-1} = 1$。转移矩阵描述如下:\\
+    \begin{gather*}
+        \begin{matrix}
+            1 & 0   & 0   & 0   & \cdots & 0  & 0 & 0 \\
+            p & 0   & 1-p & 0   & \cdots & 0  & 0 & 0 \\
+            0 & p   & 0   & 1-p & \cdots & 0  & 0 & 0  \\
+            \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+            0 & 0   & 0   & 0   &  \cdots & p & 0 & 1-p \\
+            0 & 0   & 0   & 0   &  \cdots & 0 & 1 & 0
+        \end{matrix}
+    \end{gather*}
+    令$A_0$表示最终落入状态0 的事件，记$q_{i,0} = \mathrm{Pr}(A_0|X_1 = i)$,当$i=0$时，$q_{0,0} = 1$\\
+    \begin{gather*}
+        q_{i,0} = \mathrm{Pr}(A_0|x_1 = i) 
+        = \sum_{j=0}^{n} \mathrm{Pr}(A_0 | x_1 = i, x_2 = j) \cdot \mathrm{Pr}(x_2 =j|x_1=i)
+        = \sum_{j=0}^{n} \mathrm{Pr}(A_0 | x_1 = j) \cdot p_{i,j}\\
+    \end{gather*}
+    该方程组表示为如下的矩阵\\
+    \begin{gather*}
+        \begin{matrix}
+            1  & p-1 & 0   & 0   & \cdots & 0  & 0  & 0 & p \\
+            -p & 1   & p-1 & 0   & \cdots & 0  & 0  & 0 & 0 \\
+            0  & -p  & 1   & p-1 & \cdots & 0  & 0  & 0 & 0  \\
+            \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+            0 & 0   & 0   & 0   &  \cdots & -p & 1  & p-1 & 0 \\
+            0 & 0   & 0   & 0   &  \cdots & 0  & -1 & 1 & 0
+        \end{matrix}
+    \end{gather*}
+    解得$q_{n,0} = q_{n-1, 0} = q_{n-2, 0} = \cdots = q_{1,0}$ \\
+    代入$p_{1,0} + (p-1)p_{2, 0} = p$, 解得$q_{n,0} = q_{n-1, 0} = q_{n-2, 0} = \cdots = q_{1,0} = 1$\\
+    $\mathrm{Pr}(A_0) = \sum_{i=1}^n \mathrm{Pr}(A_0|x_1=i) p(x_1=i)= \frac{1}{n}\sum_{i=1}^n \mathrm{Pr}(A_0|x_1=i) = 1$\\
+    所以蚂蚁被吃掉的概率为1
+\end{document}

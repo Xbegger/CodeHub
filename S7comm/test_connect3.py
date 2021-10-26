@@ -41,8 +41,12 @@ class MyS7Client(S7Client):
         packet1.Parameters[1].Parameter = self._src_tsap
         packet1.Parameters[2].Parameter = self._dst_tsap
         self.send_receive_packet(packet1)
-        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A, PDULength=0x00f0))
-        rsp2 = self.send_receive_s7_packet(packet2)
+
+
+        packet = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(PDULength=0x00f0))
+
+
+        rsp2 = self.send_receive_s7_packet(packet)
         if rsp2:
             self._connected = True
         # Todo: Need get pdu length from rsp2
@@ -69,13 +73,14 @@ class MyS7Client(S7Client):
             str = str + c.encode('hex')
         return str
 
-target = MyS7Client(name="test", ip="192.168.178.23", rack=0, slot=3)
+target = MyS7Client(name="test", ip="192.168.178.54", rack=0, slot=3)
 
 target.connect()
 
 
 a = input("continue")
 
-packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))/S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
-target.send_s7_packet(packet2)
+packet = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter())
+             
+target.send_s7_packet(packet)
 
