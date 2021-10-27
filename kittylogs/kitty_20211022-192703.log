@@ -1,0 +1,35 @@
+[2021-10-22 19:27:05,617] [INFO] [base._load_session] -> No session loaded
+[2021-10-22 19:27:05,621] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20211022-192703.log
+
+                 Total possible mutation count: 1000
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-10-22 19:27:05,624] [INFO] [base.start] -> Performing environment test
+[2021-10-22 19:27:05,634] [INFO] [base._test_info] -> Current test: -1
+[2021-10-22 19:27:05,635] [INFO] [server.transmit] -> request(34): 030000221de00000000100c0010ac1083330333133303330c2083330333233303330
+[2021-10-22 19:27:05,644] [ERROR] [server.transmit] -> target.transmit - failure in receive (exception: [Errno 10054] )
+[2021-10-22 19:27:05,645] [ERROR] [server.transmit] -> Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\targets\server.py", line 98, in transmit
+    response = self._receive_from_target()
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 86, in _receive_from_target
+    return self.socket.recv(10000)
+error: [Errno 10054] 
+
+[2021-10-22 19:27:05,648] [WARNING] [base.post_test] -> Test -1 status: failed
+[2021-10-22 19:27:05,648] [WARNING] [base.post_test] -> Reason: failed to receive response: [Errno 10054] 
+[2021-10-22 19:27:05,648] [INFO] [server._test_environment] -> Environment test failed
+[2021-10-22 19:27:05,650] [ERROR] [base.start] -> Error occurred while fuzzing: Exception('Environment test failed',)
+[2021-10-22 19:27:05,651] [ERROR] [base.start] -> Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\base.py", line 385, in start
+    self._test_environment()
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\server.py", line 54, in _test_environment
+    raise Exception('Environment test failed')
+Exception: Environment test failed
+

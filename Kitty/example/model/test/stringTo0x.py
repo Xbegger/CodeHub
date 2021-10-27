@@ -1,7 +1,7 @@
+# coding:utf-8
+a = "0139"
 
-str = input("请输入要转换的字符串")
-by = bytes(str, 'UTF-8')
-print(by.hex())
+print(a.decode('hex'))
 
 
 '''
