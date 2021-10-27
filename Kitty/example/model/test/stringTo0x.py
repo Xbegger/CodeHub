@@ -1,6 +1,5 @@
 # coding:utf-8
-a = "0139"
-
+a = '0139'
 print(a.decode('hex'))
 
 

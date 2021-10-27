@@ -41,8 +41,16 @@ class MyS7Client(S7Client):
         packet1.Parameters[1].Parameter = self._src_tsap
         packet1.Parameters[2].Parameter = self._dst_tsap
         self.send_receive_packet(packet1)
-        packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A, PDULength=0x00f0))
-        rsp2 = self.send_receive_s7_packet(packet2)
+
+
+        packet = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", 
+                                                    Parameters=S7SetConParameter(MaxAmQcalling=0x000A, 
+                                                                                 MaxAmQcalled=0x000A,
+                                                                                 PDULength = 0x00f0))
+
+
+
+        rsp2 = self.send_receive_s7_packet(packet)
         if rsp2:
             self._connected = True
         # Todo: Need get pdu length from rsp2
@@ -72,7 +80,6 @@ class MyS7Client(S7Client):
 
     def receive(self):
         while( True):
-            
             pkts = sniff(opened_socket=self._connection,prn = lambda pkt:"\n[Recive  ] %s \n" % (self.packetStr_to_hex(pkt.original)))
 
             # for pkt in pkts:
@@ -82,25 +89,42 @@ class MyS7Client(S7Client):
 
 def sendMethod(target):
     while True:
-        time.sleep(1)
+        # time.sleep(1)
         packet2 = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter(MaxAmQcalling=0x000A, MaxAmQcalled=0x000A))
-        target.send_s7_packet(packet2)
+        
+        item = [("DB1", "2.0", "byte", 3)]
+        transport_size, block_num, area_type, address = target.get_item_pram_from_item(item[0])
+        length = int(item[0][3])
+        READ_PACKET = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job", 
+                                                               Parameters=S7ReadVarParameterReq(Items=S7ReadVarItemsReq(TransportSize=transport_size,
+                                                                                                                        GetLength=length,
+                                                                                                                        BlockNum=block_num,
+                                                                                                                        AREAType=area_type,
+                                                                                                                        Address=address
+                                                                                                                        )))
+        
+        target.send_s7_packet(READ_PACKET)
 
 
 if __name__ == '__main__':
-    target = MyS7Client(name="test", ip="192.168.1.188", rack=0, slot=1)
+    target = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=3)
+
+    target2 = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=2)
 
     target.connect()
-    
+    target2.connect()
+
     sendThread = threading.Thread(target=sendMethod, args=(target,))
+    send2Thread = threading.Thread(target=sendMethod, args=(target2,))
     recvThread = threading.Thread(target=target.receive)
+    recvThread.start()
+
+    sendThread.start()
+    send2Thread.start()
+    
+
     # recvThread.setDaemon(True)
     # a = input("continue")
     
     # sendThread.setDaemon(True)
-
-    recvThread.start()
-    sendThread.start()
-
-
 
