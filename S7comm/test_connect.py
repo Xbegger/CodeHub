@@ -22,7 +22,7 @@ class MyS7Client(S7Client):
         :param slot: cpu slot (default: 2)
         :param timeout: timeout of socket (default: 2)
         '''
-        super(MyS7Client, self).__init__(name, ip, port=102, src_tsap='\x01\x00', rack=0, slot=2, timeout=2)
+        super(MyS7Client, self).__init__(name, ip, port, src_tsap, rack, slot, timeout)
         self.pktCounts = 0
 
 

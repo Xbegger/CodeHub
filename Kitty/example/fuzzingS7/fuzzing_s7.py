@@ -17,8 +17,8 @@ target_port = 102
 
 randseed = int(RandShort())
 #   COTP CR 请求的参数
-SRC_TSAP = '0100'.encode('hex')
-DST_TSAP = '0103'.encode('hex')
+SRC_TSAP = '0100'.decode('hex')
+DST_TSAP = '0200'.decode('hex')
 
 
 #   定义COTP CR 建立连接数据包
