@@ -27,22 +27,11 @@ class Solution {
         
         return max;
     }
-    int maxSumSubBST(TreeNode root){
-        if(root == null){
-            return 0;
-        }
-        int left, right;
-        left = maxSumBST(root.left);
-        right = maxSumBST(root.right);
-        System.out.println("root: " + root.val + "left:" + left + "  right:" + right);
-        if(left > max){
-            max = left;
-        }
-        if(right > max){
-            max = right;
-        }
-        
-        return (left + right + root.val); 
+    void traverse(TreeNode root){
+        ''' 1. 左右子树是否是BST
+            2. 以当前节点为根的子树是否是BST
+            3. 当前节点为根的BST子树键值和是多少
+        '''
     }
 }
 // @lc code=end

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  26 OCT 2021 20:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  27 OCT 2021 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,28 +387,33 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 21.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
 
-Overfull \hbox (13.76437pt too wide) detected at line 49
+Overfull \hbox (13.76437pt too wide) detected at line 47
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
+ []
+
+
+Overfull \hbox (52.8381pt too wide) detected at line 73
+[]
  []
 
 [1
 
-] (./211050035韩振悦_03.aux)
+] [2] (./211050035韩振悦_03.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
@@ -417,10 +422,10 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  6867 strings out of 476919
  188420 string characters out of 5818255
- 542932 words of memory out of 5000000
+ 544932 words of memory out of 5000000
  26802 multiletter control sequences out of 15000+600000
  405136 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,15n,104p,371b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 211050035韩振悦_03.pdf (1 page).
+Output written on 211050035韩振悦_03.pdf (2 pages).

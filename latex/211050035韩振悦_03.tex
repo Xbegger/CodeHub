@@ -25,11 +25,9 @@
             \text{今日有雨} &0.3 & 0.7    
         \end{matrix}
         \\
-        \text{要求星期一有雨，星期三也有雨的概率，即求} P_{1,1}^{2}\\
-        \text{计算可得} P_{1,1}^{2} = 0.64
+        \text{要求星期一有雨，星期三也有雨的概率，即求} P_{1,1}^{2}
+        \text{,计算可得} P_{1,1}^{2} = 0.64
     \end{gather*}
-
-
     2.由题意可知转移矩阵为状态为$0 \sim n$ 的 $n \times n$ 矩阵。且有$p_{0,0} = 1,p_{n, n-1} = 1$。转移矩阵描述如下:\\
     \begin{gather*}
         \begin{matrix}
@@ -59,7 +57,27 @@
         \end{matrix}
     \end{gather*}
     解得$q_{n,0} = q_{n-1, 0} = q_{n-2, 0} = \cdots = q_{1,0}$ \\
-    代入$p_{1,0} + (p-1)p_{2, 0} = p$, 解得$q_{n,0} = q_{n-1, 0} = q_{n-2, 0} = \cdots = q_{1,0} = 1$\\
+    代入$q_{1,0} + (p-1)q_{2, 0} = p$, 解得$q_{n,0} = q_{n-1, 0} = q_{n-2, 0} = \cdots = q_{1,0} = 1$\\
     $\mathrm{Pr}(A_0) = \sum_{i=1}^n \mathrm{Pr}(A_0|x_1=i) p(x_1=i)= \frac{1}{n}\sum_{i=1}^n \mathrm{Pr}(A_0|x_1=i) = 1$\\
-    所以蚂蚁被吃掉的概率为1
+    所以蚂蚁被吃掉的概率为1\\
+    3.已知蜘蛛起始位置在0，蜘蛛的转移矩阵为
+    $\begin{smallmatrix}
+            0.7 & 0.3 \\
+            0.3 & 0.7 
+        \end{smallmatrix}$  
+    \begin{gather*}
+        p_{0,0}^{(n)} = \sum_i p_{0,i}^{(1)} p_{i,0}^{(n-1)} = \sum_i p_{0,i} (\sum_j p_{i,j}^{(1)} p_{j,0}^{(n-2)})
+        = \sum_i \sum_j p_{0,i} p_{i,j} p_{j,0}^{(n-2)} = \cdots = \sum \cdots \sum p_{0,i} p_{i,j} \cdots p_{k,0}\\
+        = \sum_{k = 0}^{\frac{n}{2}}C_{n}^{2k } (0.3)^{2k} \times (0.7)^{n - 2k}\\
+        p_{0,1}^{(n)} = 1 - p_{0,0}^{(n)} = \sum_{k=1}^{\frac{n}{2}} C_{n}^{2k-1} (0.3)^{2k-1} \times (0.7)^{n-2k + 1}\\    
+    \end{gather*}
+    蚂蚁的起始位置在1，蚂蚁的转移矩阵为
+    $\begin{smallmatrix}
+        0.3 & 0.7 \\
+        0.7 & 0.3 
+    \end{smallmatrix}$
+    \begin{gather*}
+        p_{1,0} = \sum_{k=1}^{\frac{n}{2}} C_{n}^{2k-1} (0.7)^{2k-1} \times (0.3)^{n - 2k + 1}\\
+        p_{1,1} = \sum_{k=0}^{\frac{n}{2}} C_{n}^{2k} (0.7)^{2k} \times (0.3)^{n-2k}
+    \end{gather*}
 \end{document}
