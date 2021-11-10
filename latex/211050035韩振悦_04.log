@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  27 OCT 2021 14:48
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  3 NOV 2021 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**211050035韩振悦_03
-(./211050035韩振悦_03.tex
+**211050035韩振悦_04
+(./211050035韩振悦_04.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (d:/windowsSoftware/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -270,8 +270,8 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen189
 \Gm@layoutvoffset=\dimen190
 \Gm@dimlist=\toks21
-) (./211050035韩振悦_03.aux)
-\openout1 = `211050035韩振悦_03.aux'.
+) (./211050035韩振悦_04.aux)
+\openout1 = `211050035韩振悦_04.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -386,46 +386,57 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 21.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--43
-
- []
-
-
-Overfull \hbox (13.76437pt too wide) detected at line 47
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
-
- []
-
-
-Overfull \hbox (52.8381pt too wide) detected at line 73
-[]
- []
-
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 红 (U+7EA2) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 球 (U+7403) in font [lmroman10-regular]:mapping=tex-text;!
 [1
 
-] [2] (./211050035韩振悦_03.aux)
+] [2] (./211050035韩振悦_04.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 6867 strings out of 476919
- 188420 string characters out of 5818255
- 544932 words of memory out of 5000000
- 26802 multiletter control sequences out of 15000+600000
+ 6856 strings out of 476919
+ 187707 string characters out of 5818255
+ 540932 words of memory out of 5000000
+ 26791 multiletter control sequences out of 15000+600000
  405136 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,15n,104p,371b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,14n,104p,371b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 211050035韩振悦_03.pdf (2 pages).
+Output written on 211050035韩振悦_04.pdf (2 pages).

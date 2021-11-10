@@ -1,4 +1,4 @@
-package hsp_Java.courseExercise;
+package hsp_Java.courseExercise.chapter3;
 
 public class TypeConvert {
     /*
