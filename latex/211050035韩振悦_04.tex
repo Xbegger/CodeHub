@@ -1,0 +1,85 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    1.
+    (1)已知甲盒子有两个红球，乙盒子有四个白球。每次从两个盒子各取一球交换\\
+    $P(X_n|X_{n-1}, X_{n-1}, \cdots, X_1, X_0) = P(X_n|X_{n-1})$
+    所以随机过程$\{X_n,n=0,1,\cdots\}$是一个Markov链。\\
+    转移概率矩阵为
+    $\begin{matrix}
+                    & 0个红球 & 1个红球 & 2个红球 \\
+            0个红球  & \frac{1}{2} & \frac{1}{2} & 0\\
+            1个红球  & \frac{3}{8} & \frac{1}{2}  & \frac{1}{8} \\
+            2个红球  & 0  &  1  & 0
+    \end{matrix}$\\
+    (2) 由(1)知转移概率矩阵$
+    P = \begin{matrix}
+            & 0个红球 & 1个红球 & 2个红球 \\
+            0个红球  & \frac{1}{2} & \frac{1}{2} & 0\\
+            1个红球  & \frac{3}{8} & \frac{1}{2}  & \frac{1}{8} \\
+            2个红球  & 0  &  1  & 0
+        \end{matrix}$。
+    从转移概率矩阵可知，各个状态之间是互通是不可约的，所以随机过程是正常返的，又因为周期为1，
+    所以随机过程$\{X_n, n=0,1, \cdots\}$是遍历的\\
+    (3)
+    \begin{gather*}
+        \begin{cases}
+            \pi_1 = \pi_1 \times \frac{1}{2} + \pi_2 \times \frac{1}{2}\\
+            \pi_2 = \pi_1 \times \frac{3}{8} + \pi_2 \times \frac{1}{2} + \pi_3 \times \frac{1}{8}\\
+            \pi_3 = \pi_2 \times 1\\
+            \sum_{i=1}^{3} \pi_i = 1
+        \end{cases}
+    \end{gather*}  
+    解得$\pi_1 = \pi_2 = \pi_3 = \frac{1}{3}$
+    2.
+    \begin{gather*}
+        \text{令$A = \{ X_1, X_2,\cdots, X_5\}$} 
+        P(A) = \sum_i P(X_2, X_3, X_4, X_5| X_1 = i) \cdot P(X_1 = i)\\   
+        = \sum_i \sum_j P(X_3, X_4, X_5| X_2=j, X_1 = i) \cdot P(X_1 =i) \cdot P(X_2=j|X_1=i)\\
+        = \sum \cdots \sum P(X_5|X_4, X_3, X_2, X_1) \cdot P(X_4|X_3, X_2, X_1) \cdot P(X_3|X_2,X_1) \cdot P(X_2|X_1) \cdot P(X_1)
+    \end{gather*}
+    甲盒中:红球90个，白球10个，摸到一个球后放回另一个颜色的球。当前摸到红球的概率只受前一时刻摸球的影响，是一个马尔可夫链\\
+    $P(A) = \sum \cdots \sum P(X_5|X_4)\cdot P(X4|X_3)\cdot P(X_3|X_2)\cdot P(X_2|X_1)\cdot P(X_1)$\\
+    所以
+    $$P(X_1=\text{红}, X_2 =\text{红}, X_3 = \text{红}, X_4 = \text{红}, X_5 = \text{白} )
+    = 0.9 * 0.89 * 0.88 * 0.87 * 0.14 = 0.8585
+    $$\\
+    乙盒：红球50，白球50个，每次摸到球后放回。每次摸到红球的概率互相独立\\
+    $P(A) = P(X_1) \cdot P(X_2) \cdot P(X_3) \cdot P(X_4) \cdot P(X_5)$
+    所以
+    $$P(X_1=\text{红}, X_2 =\text{红}, X_3 = \text{红}, X_4 = \text{红}, X_5 = \text{白} )
+    = 0.5 * 0.5 * 0.5 *0.5 * 0.5 = 0.3125
+    $$\\
+    丙盒：红球40个，白球60个，每次摸到球后不放回。每次摸到红球的概率受前一时刻摸球的影响，是一个马尔可夫链\\
+    $P(A) = \sum \cdots \sum P(X_5|X_4)\cdot P(X4|X_3)\cdot P(X_3|X_2)\cdot P(X_2|X_1)\cdot P(X_1)$\\
+    所以
+    $P(X_1=\text{红}, X_2 =\text{红}, X_3 = \text{红}, X_4 = \text{红}, X_5 = \text{白} )
+    = \frac{40}{100} \times \frac{39}{99} \times \frac{38}{98} \times \frac{37}{97} \times \frac{60}{96}
+    = 0.1456
+    $
+
+    \begin{gather*}
+        P(\text{甲}|A) = \frac{P(A|\text{甲}) \cdot P(\text{甲})}{P(A)} 
+        = \frac{P(A|\text{甲}) \cdot P(\text{甲}) }{\sum_{\omega} P(A|\omega) P(\omega)}\\
+        = 0.6521\\
+        \text{同理可得}
+        P(\text{乙}|A) = 0.2373
+        P(\text{丙}|A) = 0.1106
+    \end{gather*}
+    所以来自甲盒的可能性最高
+\end{document}

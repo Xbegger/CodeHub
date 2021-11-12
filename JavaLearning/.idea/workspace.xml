@@ -49,13 +49,13 @@
       <recent name="hsp_Java" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.FloatDetail">
-    <configuration name="FloatDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter3.FloatDetail" />
+  <component name="RunManager" selected="应用程序.ArithmeticOperatorExercise01">
+    <configuration name="ArithmeticOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter4.ArithmeticOperator" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter3.*" />
+          <option name="PATTERN" value="hsp_Java.chapter4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter2.Homework02" />
+    <configuration name="ArithmeticOperatorExercise01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter4.ArithmeticOperatorExercise01" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter2.*" />
+          <option name="PATTERN" value="hsp_Java.courseExercise.chapter4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter3.IntDetail" />
+    <configuration name="Homework01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter3.Homework01" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter3.*" />
+          <option name="PATTERN" value="hsp_Java.courseExercise.chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Var01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter3.Var01" />
+    <configuration name="Homework03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter3.Homework03" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter3.*" />
+          <option name="PATTERN" value="hsp_Java.courseExercise.chapter3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,8 +102,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Var02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter3.Var02" />
+    <configuration name="StringToBasicDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter3.StringToBasicDetail" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.FloatDetail" />
-        <item itemvalue="应用程序.IntDetail" />
-        <item itemvalue="应用程序.Var02" />
-        <item itemvalue="应用程序.Var01" />
-        <item itemvalue="应用程序.Homework02" />
+        <item itemvalue="应用程序.ArithmeticOperatorExercise01" />
+        <item itemvalue="应用程序.ArithmeticOperator" />
+        <item itemvalue="应用程序.Homework03" />
+        <item itemvalue="应用程序.Homework01" />
+        <item itemvalue="应用程序.StringToBasicDetail" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +142,8 @@
       <workItem from="1634795097402" duration="8309000" />
       <workItem from="1634898466391" duration="1869000" />
       <workItem from="1635214597454" duration="9539000" />
+      <workItem from="1635507093136" duration="8772000" />
+      <workItem from="1635599914574" duration="5895000" />
     </task>
     <servers />
   </component>

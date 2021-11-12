@@ -21,28 +21,43 @@
  * }
  */
 class Solution {
-    int max = 0;
+    int maxSum;
     public int maxSumBST(TreeNode root) {
-        maxSumSubBST(root);
-        
-        return max;
+        maxSum = 0;
+        traverse(root);
+        return maxSum;
     }
-    int maxSumSubBST(TreeNode root){
+    int[] traverse(TreeNode root){
+        /* 1. 左右子树是否是BST
+            2. 以当前节点为根的子树是否是BST
+            3. 当前节点为根的BST子树键值和是多少
+        */
         if(root == null){
-            return 0;
+            return new int[]{
+                1, Integer.MAX_VALUE, Integer.MIN_VALUE, 0
+            };
         }
-        int left, right;
-        left = maxSumBST(root.left);
-        right = maxSumBST(root.right);
-        System.out.println("root: " + root.val + "left:" + left + "  right:" + right);
-        if(left > max){
-            max = left;
+
+        int[] left = traverse(root.left);
+        int[] right = traverse(root.right);
+
+        int[] res = new int[4];
+        // 判断左右子树是否是BST
+        if(left[0] == 1 && right[0] == 1){
+            // 判断当前节点为根的子树是否是BST
+            if(root.val > left[2] && root.val < right[1]){
+                res[0] = 1;
+                res[1] = Math.min(left[1], root.val);
+                res[2] = Math.max(right[2], root.val);
+                // 计算当前节点为根的BST子树键值和
+                res[3] = left[3] + right[3] + root.val;
+                maxSum = Math.max(maxSum, res[3]);
+            }else{
+                res[0] = 0;
+            }
         }
-        if(right > max){
-            max = right;
-        }
-        
-        return (left + right + root.val); 
+
+        return res;
     }
 }
 // @lc code=end
