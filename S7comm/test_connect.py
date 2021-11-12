@@ -107,20 +107,20 @@ def sendMethod(target):
 
 
 if __name__ == '__main__':
-    target = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=3)
+    target = MyS7Client(name="test", ip="192.168.1.188", rack=0, slot=1)
 
-    target2 = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=2)
+    # target2 = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=2)
 
     target.connect()
-    target2.connect()
+    # target2.connect()
 
     sendThread = threading.Thread(target=sendMethod, args=(target,))
-    send2Thread = threading.Thread(target=sendMethod, args=(target2,))
+    # send2Thread = threading.Thread(target=sendMethod, args=(target2,))
     recvThread = threading.Thread(target=target.receive)
     recvThread.start()
 
     sendThread.start()
-    send2Thread.start()
+    # send2Thread.start()
     
 
     # recvThread.setDaemon(True)
