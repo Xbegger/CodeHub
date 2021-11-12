@@ -1,15 +1,24 @@
-from struct import pack
-import time
 from icssploit.protocols.cotp import *
 from icssploit.protocols.s7comm import *
 from scapy.supersocket import StreamSocket
 import socket
-from baseClass import Base
-from scapy.compat import raw
+from BaseClass import Base
+from scapy.all import *
+
+VAR_NAME_TYPES = {
+    'P': 0x80,      # I/O
+    'I': 0x81,      # Memory area of inputs
+    'Q': 0x82,      # Memory area of outputs
+    'M': 0x83,      # Memory area of bit memory
+    'DB': 0x84,     # Data block
+    'L': 0x86,      # Local data
+    'V': 0x87       # Previous local data
+}
+
 
 class MyS7Client(Base):
     
-    def __init__(self, name, ip, port=102, src_tsap='\x01\x00', rack=0, slot=2, timeout=2):
+    def __init__(self, name, ip, src_ip, port=102, src_tsap='\x01\x00', rack=0, slot=2, timeout=2):
         '''
 
         :param name: Name of this targets
@@ -40,6 +49,9 @@ class MyS7Client(Base):
         self.is_running = False
 
         self.pktCounts = 0
+        self.crushPacket = None
+        self._plugin = None
+        self._src_ip = src_ip
 
 
     def connect(self):
@@ -111,9 +123,14 @@ class MyS7Client(Base):
             packet = self._fix_pdur(packet)
             try:
                 self._connection.send(packet)
+                
+                if(self.crushPacket != None and packet == self.crushPacket):
+                    self._plugin.off()
+
                 self.pktCounts = self.pktCounts + 1
                 msg ="[request]" + raw(packet).hex()
                 self.logger.info(msg)
+
             except Exception as err:
                 self.logger.error(err)
                 return None
@@ -130,14 +147,83 @@ class MyS7Client(Base):
         except Exception as err:
             self.logger.error(err)
             return payload
+    
+    def get_item_pram_from_item(self, item):
+        block_num = ''
+        area_type = ''
+        address = ''
+        transport_size = ''
+        try:
+            for key in VAR_NAME_TYPES:
+                if isinstance(item[0], str):
+                    if item[0].startswith(key):
+                        area_type = VAR_NAME_TYPES[key]
+
+                elif isinstance(item[0], int):
+                    if item[0] in VAR_NAME_TYPES.keys():
+                        area_type = item[0]
+
+            # Data block
+            if area_type == 0x84:
+                block_num = int(item[0][2:])
+            else:
+                block_num = 0
+
+            if isinstance(item[1], str):
+                address_data = item[1].split('.')
+                address = int(address_data[0]) * 8 + int(address_data[1])
+
+            elif isinstance(item[1], int):
+                address = item[1]
+
+            else:
+                self.logger.error("Address: %s is not string or int format, please check again" % item[1])
+
+            transport_size = self.get_transport_size_from_data_type(item[2])
+
+        except Exception as err:
+            self.logger.error("Can't get item parameter with var_name: %s with error: \r %s" % (item, err))
+            return transport_size, block_num, area_type, address
+
+        return transport_size, block_num, area_type, address
+
+    @staticmethod
+    def get_transport_size_from_data_type(data_type):
+        for key, name in S7_TRANSPORT_SIZE_IN_PARM_ITEMS.items():
+            if isinstance(data_type, str):
+                if name.startswith(data_type.upper()):
+                    return key
+            elif isinstance(data_type, int):
+                return data_type
+        return None
 
 
-target = MyS7Client(name="test", ip="192.168.178.21", rack=0, slot=1)
 
-target.connect()
+    def setCrushPacket(self, crushPacket, plugin):
+        self.crushPacket = crushPacket
+        self.__plugin = plugin
 
-a = input("continue")
 
-packet = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter())
-             
-target.send_s7_packet(packet)
+    '''
+        @function: judge whethre the PLC is online by arp test
+        @parameter string dstIP：the PLC IP
+        @parameter string srcIP: the host IP
+        @parameter int timeout: the max time to wait response
+        @parameter int retry: the max try to send arp test
+        @return bool true: PLC is online
+        @return bool false: PLC is offline
+
+    '''
+    def onlinePLC(self, timeout = 3, retry=1):
+        packet = ARP(pdst=self._ip, psrc=self._src_ip)
+
+        recv = sr1(packet, retry=retry, timeout=timeout)
+        if(recv != None):
+            return True
+
+        return False
+
+
+
+
+

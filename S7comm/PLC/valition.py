@@ -1,7 +1,12 @@
 from scapy.all import *
-import MIPlugin
-from baseClass import Base  
+from MIPlugin import MIPlugin
+from BaseClass import Base  
 
+from MyS7Client import MyS7Client
+from icssploit.protocols.cotp import *
+from icssploit.protocols.s7comm import *
+
+from BLocate import BLocate
 
 class PluginException(Exception):
     pass
@@ -17,34 +22,38 @@ class HandleCrush(Base):
         @parameter maxWait: the max time to wait the PLC restart 
         @parameter maxWaitCount: the max wait times to wait PLC restart
     '''
-    def __init__(self, plugin, maxPluginCount, maxWait, maxWaitCount):
+    def __init__(self, s7Client, plugin, maxPluginCount=3, maxWait=3, maxWaitCount=3):
         super(HandleCrush, self).__init__()
         self.__plugin = plugin
         self.__maxPluginCount = maxPluginCount
         self.__maxWait = maxWait
         self.__maxWaitCount = maxWaitCount
+        self.__S7Client = s7Client
 
 
+    def getS7Client(self):
+        return self.__S7Client
 
     '''
         @function: handle the crush 
             1.switch on the plugin
             2.switch off the plugin
             3.wait the plc to restart
-            4.chechk whether the plc is online
+            4.check whether the plc is online
+        @raise PLCException: the plc is not online
     '''
     def handleCrush(self):
 
-        self.__closePlugin(self.__plugin, self.__maxPluginCount)
+        self.__closePlugin()
 
-        self.__openPlugin(self.__plugin, self.__maxPluginCount)
+        self.__openPlugin()
 
         i = self.__maxWaitCount
 
         while(i > 0):
             i = i - 1
             time.sleep(self.__maxWait)
-            plcStatus = onlinePLC()
+            plcStatus = self.__S7Client.onlinePLC()
             if(plcStatus == True):
                 return True
         
@@ -84,27 +93,39 @@ class HandleCrush(Base):
 
 
 
-'''
-    @function: judge whethre the PLC is online by arp test
-    @parameter string dstIP：the PLC IP
-    @parameter string srcIP: the host IP
-    @parameter int timeout: the max time to wait response
-    @parameter int retry: the max try to send arp test
-    @return bool true: PLC is online
-    @return bool false: PLC is offline
 
-'''
-def onlinePLC(dstIP, srcIP, timeout, retry):
-    packet = ARP(dst=dstIP, src=srcIP)
+target = MyS7Client(name="test", ip="192.168.20.128", src_ip="192.168.20.1", rack=0, slot=1)
 
-    recv = sr1(packet, retry=retry, timeout=timeout)
-    if(recv != None):
-        return True
-
-    return False
+pkt = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
+                                        Parameters=S7ReadSZLParameterReq(),
+                                        Data=S7ReadSZLDataReq(SZLId=RandShort(),
+                                                            SZLIndex=RandShort()))
 
 
+item = [("DB1", "2.0", "byte", 3)]
+transport_size, block_num, area_type, address = target.get_item_pram_from_item(item[0])
+length = int(item[0][3])
+crushPacket = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job", 
+                                                Parameters=S7ReadVarParameterReq(Items=S7ReadVarItemsReq(TransportSize=transport_size,
+                                                                                                        GetLength=length,
+                                                                                                        BlockNum=block_num,
+                                                                                                        AREAType=area_type,
+                                                                                                        Address=address
+                                                                                                        )))
 
 
+target.connect()
 
+a = input("continue")
+
+packets = [pkt for i in range(100) ]
+packets[20] = crushPacket
+
+ip = "192.168.137.112"
+token = "cf337484e9615f509fa39591bc802784"
+plug = MIPlugin(ip=ip, token=token)
+hc = HandleCrush(target, plug)
+bl = BLocate(packets, hc)
+
+ans = bl.locate()
 

@@ -16,7 +16,7 @@ class Base(object):
             logger = logging.getLogger('targets')
             logger.setLevel(logging.INFO)
             consolehandler = logging.StreamHandler()
-            console_format = logging.Formatter('[%(asctime)s][%(levelname)-8s][%(module)s.%(funcName)s] %(message)s')
+            console_format = logging.Formatter('[%(asctime)s][%(levelname)s][%(module)s.%(funcName)s] %(message)s')
             consolehandler.setFormatter(console_format)
             logger.addHandler(consolehandler)
             Base._logger = logger
