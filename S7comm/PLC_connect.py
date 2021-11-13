@@ -80,7 +80,10 @@ target.connect()
 
 a = input("continue")
 
+READ_SZL_PACKET = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
+                                                      Parameters=S7ReadSZLParameterReq(),
+                                                      Data=S7ReadSZLDataReq())
 packet = TPKT() / COTPDT(EOT=1) / S7Header(ROSCTR="Job", Parameters=S7SetConParameter())
              
-target.send_s7_packet(packet)
+target.send_s7_packet(READ_SZL_PACKET)
 

@@ -107,7 +107,7 @@ def sendMethod(target):
 
 
 if __name__ == '__main__':
-    target = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=3)
+    target = MyS7Client(name="test", ip="192.168.1.188", rack=0, slot=1)
 
     # target2 = MyS7Client(name="test", ip="192.168.178.11", rack=0, slot=2)
 
