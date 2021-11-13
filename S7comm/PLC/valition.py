@@ -22,7 +22,7 @@ class HandleCrush(Base):
         @parameter maxWait: the max time to wait the PLC restart 
         @parameter maxWaitCount: the max wait times to wait PLC restart
     '''
-    def __init__(self, s7Client, plugin, maxPluginCount=3, maxWait=3, maxWaitCount=3):
+    def __init__(self, s7Client, plugin, maxPluginCount=3, maxWait=4, maxWaitCount=4):
         super(HandleCrush, self).__init__()
         self.__plugin = plugin
         self.__maxPluginCount = maxPluginCount
