@@ -1,0 +1,57 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    已知顾客到来过程为Possion分布，平均4人/h, $\lambda = 4$\\
+    修理时间服从负指数分布,平均需要6min, $\mu = 10$\\
+    (1)求修理店空闲的概率\\
+    \begin{gather*}
+        \rho = \frac{\lambda}{\mu} = 0.4\\
+        p_0 = \left(sum_{n=0}^\infty \rho^n\right)^{-1} 
+    = \left(\frac{1}{\rho}\right)^{-1}
+    = 1-\rho = 0.6\\
+    \end{gather*}
+    (2)店内恰有3个顾客的概率\\
+    \begin{gather*}
+        p_3 = \rho^3 p_0 = 0.4^3 \times 0.6 = 0.0384
+    \end{gather*}
+    (3)店内至少有一个顾客的概率\\
+    \begin{gather*}
+        P(\text{至少有一个顾客})= \sum_{n=1}^{\infty} p_n = 1- p_0 = 0.4
+    \end{gather*}
+    (4)店内平均顾客数\\
+    \begin{gather*}
+        L_s = \frac{\lambda}{\mu - \lambda}
+    = \frac{4}{10 - 4} = \frac{2}{3} 
+    \end{gather*}
+    (5)每位顾客在店内平均逗留的时间\\
+    \begin{gather*}
+        W_s = \frac{1}{\mu - \lambda}
+    = \frac{1}{10 - 4} = \frac{1}{6}
+    \end{gather*}
+    (6)等待服务的平均顾客数\\
+    \begin{gather*}
+        L_q = \frac{\lambda ^2}{\mu \times (\mu - \lambda)}
+    = \frac{4^2}{10 \times (10 - 4)}
+    = \frac{4}{15}
+    \end{gather*}
+    (7)每位顾客平均等待服务时间\\
+    \begin{gather*}
+        W_q = \frac{\lambda}{\mu(\mu - \lambda)}
+    = \frac{4}{10 \times (10 - 4)} = \frac{1}{15}
+    \end{gather*}
+\end{document}
