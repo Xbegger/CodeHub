@@ -43,10 +43,15 @@ class HandleCrush(Base):
         @raise PLCException: the plc is not online
     '''
     def handleCrush(self):
-
+        self.logger.info("handling crush")
+        
         self.__closePlugin()
 
+
+        time.sleep(2)
+
         self.__openPlugin()
+        # self.logger.info("Switch on Plugin success!")
 
         i = self.__maxWaitCount
 
@@ -55,6 +60,7 @@ class HandleCrush(Base):
             time.sleep(self.__maxWait)
             plcStatus = self.__S7Client.onlinePLC()
             if(plcStatus == True):
+                # self.logger.info("The PLC is online!")
                 return True
         
         raise PLCException("PLC restart failed!")
@@ -66,14 +72,18 @@ class HandleCrush(Base):
         @raise PluginException: if switch off the plugin failed
     '''
     def __closePlugin(self):
+        self.logger.info("trying to switch off the plugin")
         i = self.__maxPluginCount
         while(i > 0):
             i = i - 1
             res = self.__plugin.off()
             if(res == True):
+                self.logger.info("Switch off Plugin success!")
                 return True
         if(i == 0):
             raise PluginException("Switch off Plugin failed, Max_Count: " + self.__maxPluginCount)
+        
+        
 
     
     '''
@@ -81,28 +91,29 @@ class HandleCrush(Base):
         @raise PluginException: if switch on the plugin failed
     '''
     def __openPlugin(self):
+        self.logger.info("trying to switch on the plugin")
         i = self.__maxPluginCount
         while(i > 0):
             i = i - 1
             res = self.__plugin.on()
             if(res == True):
+                self.logger.info("Switch on the Plugin success!")
                 return True
 
         if(i == 0):
             raise PluginException("Switch on Plugin failed, Max_Count: " + self.__maxPluginCount)
+        
 
 
 
-
-target = MyS7Client(name="test", ip="192.168.20.128", src_ip="192.168.20.1", rack=0, slot=1)
+target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.137", rack=0, slot=1)
 
 pkt = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
                                         Parameters=S7ReadSZLParameterReq(),
-                                        Data=S7ReadSZLDataReq(SZLId=RandShort(),
-                                                            SZLIndex=RandShort()))
+                                        Data=S7ReadSZLDataReq())
 
 
-item = [("DB1", "2.0", "byte", 3)]
+item = [("M", "0.1", "bit", 3)]
 transport_size, block_num, area_type, address = target.get_item_pram_from_item(item[0])
 length = int(item[0][3])
 crushPacket = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job", 
@@ -114,18 +125,23 @@ crushPacket = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job",
                                                                                                         )))
 
 
-target.connect()
 
-a = input("continue")
+# target.connect()
+# a = input("continue")
 
-packets = [pkt for i in range(100) ]
-packets[20] = crushPacket
+packets = [pkt for i in range(10) ]
+packets[2] = crushPacket
 
-ip = "192.168.137.112"
-token = "cf337484e9615f509fa39591bc802784"
+ip = "192.168.1.134"
+token = "28aa291e4d034fe9a955d6e735153ae6"
 plug = MIPlugin(ip=ip, token=token)
+
+target.setCrushPacket(crushPacket, plug)
+
 hc = HandleCrush(target, plug)
+
 bl = BLocate(packets, hc)
 
 ans = bl.locate()
+# print(ans)
 

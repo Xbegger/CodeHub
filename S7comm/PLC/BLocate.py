@@ -18,27 +18,34 @@ class BLocate(Base):
 
 
     def locate(self):
-            
+        self.logger.info("Start binary search crush")
         candidatePackets = self.candidatePackets
         while(candidatePackets):
             chosenPackets, leftPackets, length = branchPackets(candidatePackets)
 
-            msg = "chosenPacket from %d to %d ; leftPackets from %d to %d." %(0, length/2-1, length/2, length)
+            msg = "chosenPacket from %d to %d ; leftPackets from %d to %d." %(0, length/2, length/2, length)
             self.logger.info(msg)
+            self.__s7Client.connect()
             for packet in chosenPackets:
                 self.__s7Client.send_s7_packet(packet)
-            crush = self.__s7Client.onlinePLC()
+            
+            time.sleep(3)
+            crush = not self.__s7Client.onlinePLC()
+            
             if(crush == True):
-                self.__handleCrush.handleCrush()
-                if(isCurshPacket(chosenPackets) == True):
-                    return chosenPackets
-                else:
-                    candidatePackets = chosenPackets
+                self.logger.info("find a crush")
+                self.__handleCrush.handleCrush()  
+                candidatePackets = chosenPackets
             else:
-                if(isCurshPacket(leftPackets) == True):
-                    return leftPackets
-                else:
-                    candidatePackets = leftPackets
+                candidatePackets = leftPackets
+
+            if(isCurshPacket(candidatePackets) == True):
+                break
+        
+        crushPacket = raw(candidatePackets[0]).hex()
+        self.logger.info("Crush Packet is %s" % (crushPacket))
+        return candidatePackets[0]
+        
 
 
 

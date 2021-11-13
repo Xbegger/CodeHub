@@ -102,11 +102,11 @@ class MyS7Client(Base):
             packet = self._fix_pdur(packet)
             try:
                 rsp = self._connection.sr1(packet, timeout=self._timeout)
-                msg = "[request]" + raw(packet).hex()
+                msg = "[Connect request]" + raw(packet).hex()
                 self.logger.info(msg)
                 if rsp:
                     rsp = TPKT(raw(rsp))
-                    msg = "[responde]" + raw(rsp).hex()
+                    msg = "[Connect responde]" + raw(rsp).hex()
                     self.logger.info(msg)
                 return rsp
 
@@ -120,13 +120,13 @@ class MyS7Client(Base):
 
     def send_s7_packet(self, packet):
         if self._connection:
+            initPacket = packet
             packet = self._fix_pdur(packet)
             try:
                 self._connection.send(packet)
-                
-                if(self.crushPacket != None and packet == self.crushPacket):
+                if(self.crushPacket != None and initPacket == self.crushPacket):
                     self._plugin.off()
-
+                    self.logger.info("Send the crush packet")
                 self.pktCounts = self.pktCounts + 1
                 msg ="[request]" + raw(packet).hex()
                 self.logger.info(msg)
@@ -201,11 +201,11 @@ class MyS7Client(Base):
 
     def setCrushPacket(self, crushPacket, plugin):
         self.crushPacket = crushPacket
-        self.__plugin = plugin
+        self._plugin = plugin
 
 
     '''
-        @function: judge whethre the PLC is online by arp test
+        @function: judge whether the PLC is online by arp test
         @parameter string dstIP：the PLC IP
         @parameter string srcIP: the host IP
         @parameter int timeout: the max time to wait response
@@ -215,12 +215,15 @@ class MyS7Client(Base):
 
     '''
     def onlinePLC(self, timeout = 3, retry=1):
+        self.logger.info("checking whether the PLC is online")
         packet = ARP(pdst=self._ip, psrc=self._src_ip)
 
         recv = sr1(packet, retry=retry, timeout=timeout)
         if(recv != None):
+            self.logger.info("the PLC is online")
             return True
 
+        self.logger.info("the PLC is offline")
         return False
 
 

@@ -1,5 +1,6 @@
 import binascii
 from icssploit.protocols.cotp import *
+from icssploit.protocols.s7comm import *
 # while True:
 #     string = input("请输入要转换的数字")
 #     num = int(string, 16)
@@ -24,8 +25,10 @@ from icssploit.protocols.cotp import *
 
 
 
-str = raw(TPKT()/COTPCR())
+s =  TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
+                                        Parameters=S7ReadSZLParameterReq(),
+                                        Data=S7ReadSZLDataReq())
 
-print(str)
-print(str.hex())
+print(raw(s).hex())
+print(s)
 

@@ -1,11 +1,13 @@
 import logging
-
+import time
+import os
 
 class Base(object):
     '''
     Basic class to ease logging and description of objects.
     '''
     _logger = None
+    log_file_name = './bLocateLog/bLocate%s.log' % (time.strftime("%Y%m%d-%H%M%S"),)
 
     @classmethod
     def get_logger(cls):
@@ -16,9 +18,17 @@ class Base(object):
             logger = logging.getLogger('targets')
             logger.setLevel(logging.INFO)
             consolehandler = logging.StreamHandler()
-            console_format = logging.Formatter('[%(asctime)s][%(levelname)s][%(module)s.%(funcName)s] %(message)s')
+            console_format = logging.Formatter('[%(asctime)s] [%(levelname)s] [%(module)s.%(funcName)s] -> %(message)s')
             consolehandler.setFormatter(console_format)
             logger.addHandler(consolehandler)
+
+            if not os.path.exists('./bLocateLog'):
+                os.mkdir('./bLocateLog')
+            filehandler = logging.FileHandler(Base.log_file_name)
+            file_format = logging.Formatter('[%(asctime)s] [%(levelname)s] [%(module)s.%(funcName)s] -> %(message)s')
+            filehandler.setFormatter(file_format)
+            logger.addHandler(filehandler)
+
             Base._logger = logger
         return Base._logger
 

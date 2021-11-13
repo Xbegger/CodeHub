@@ -2,8 +2,8 @@
 
 from MIPlugin import MIPlugin
 
-ip = '192.168.137.112'
-token = 'cf337484e9615f509fa39591bc802784'
+ip = '192.168.1.134'
+token = '28aa291e4d034fe9a955d6e735153ae6'
 
 plugin = MIPlugin(ip = ip, token = token)
 # msg = {'did':'MYDID','siid':2,'piid':1,'value':False}
