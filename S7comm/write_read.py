@@ -4,8 +4,9 @@ target = S7Client(name="test", ip="192.168.1.188", rack=0, slot=1)
 
 target.connect()
 
+input("abc")
 # DB_items = [("DB1", "2.0", "byte", [10,20,30])]
-M_write = [("M", "0.0", "bit", [0])]
+M_write = [("M", "0.0", "bit", [1])]
 M_read = [("M", "0.0", "bit", 1)]
 
 # DB_items = [("DB1", "2.0", "byte", 3)]

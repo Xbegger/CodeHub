@@ -106,7 +106,7 @@ class HandleCrush(Base):
 
 
 
-target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.137", rack=0, slot=1)
+target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.101", rack=0, slot=1)
 
 pkt = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
                                         Parameters=S7ReadSZLParameterReq(),

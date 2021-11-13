@@ -216,7 +216,7 @@ class MyS7Client(Base):
     '''
     def onlinePLC(self, timeout = 3, retry=1):
         self.logger.info("checking whether the PLC is online")
-        packet = ARP(pdst=self._ip, psrc=self._src_ip)
+        packet = Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(op=1, pdst=self._ip, psrc=self._src_ip)
 
         recv = sr1(packet, retry=retry, timeout=timeout)
         if(recv != None):
