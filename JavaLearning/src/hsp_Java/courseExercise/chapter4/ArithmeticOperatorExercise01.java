@@ -7,7 +7,7 @@ public class ArithmeticOperatorExercise01 {
         System.out.println(i);//1
 
         i = 1;
-        i = ++ i;
+        i = ++ i; // (1)i = i + 1; (2) temp = i; (3) i = temp;
         System.out.println(i);//2
     }
 }

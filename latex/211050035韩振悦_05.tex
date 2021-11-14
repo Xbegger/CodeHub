@@ -21,7 +21,7 @@
     (1)求修理店空闲的概率\\
     \begin{gather*}
         \rho = \frac{\lambda}{\mu} = 0.4\\
-        p_0 = \left(sum_{n=0}^\infty \rho^n\right)^{-1} 
+        p_0 = \left(\sum_{n=0}^\infty \rho^n\right)^{-1} 
     = \left(\frac{1}{\rho}\right)^{-1}
     = 1-\rho = 0.6\\
     \end{gather*}
@@ -53,5 +53,14 @@
     \begin{gather*}
         W_q = \frac{\lambda}{\mu(\mu - \lambda)}
     = \frac{4}{10 \times (10 - 4)} = \frac{1}{15}
+    \end{gather*}
+    (8)顾客在店内等待时间超过10min的概率\\
+    \begin{gather*}
+        \text{已知顾客在系统中的逗留时间T，服从$\mu-\lambda$的负指数分布}\\
+        取 t \sim \mu 的负指数分布
+        P(T_q > 10) = \int_t P(T_q + t > 10 + t) \cdot P(t) 
+    = \int_t P(T > 10 + t) \cdot P(t)
+    = \int_t e^{-(\mu-\lambda)(10+t)} \times e^{-\mu t}
+    = \frac{e^{-60}}{16}                            
     \end{gather*}
 \end{document}
