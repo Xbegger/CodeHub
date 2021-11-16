@@ -1,0 +1,58 @@
+[2021-11-16 16:01:33,703] [INFO] [BLocate.locate] -> Start binary search crush
+[2021-11-16 16:01:33,704] [INFO] [MyS7Client.connect] -> Start connect PLC
+[2021-11-16 16:01:33,782] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000010000080000f000000a000a00f0
+[2021-11-16 16:01:33,784] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000100000800000000f0000003000300f0
+[2021-11-16 16:01:33,788] [INFO] [BLocate.locate] -> chosenPacket from 0 to 5 ; leftPackets from 5 to 10.
+[2021-11-16 16:01:33,795] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000200000800080001120411440100ff090004001c0000
+[2021-11-16 16:01:38,811] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000300000800080001120411440100ff090004001c0000
+[2021-11-16 16:01:49,388] [INFO] [MyS7Client.send_s7_packet] -> Send the crush packet
+[2021-11-16 16:01:49,389] [INFO] [MyS7Client.send_s7_packet] -> [request]0300001f02f080320100000400000e00000401120a10010003000083000001
+[2021-11-16 16:01:54,406] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000500000800080001120411440100ff090004001c0000
+[2021-11-16 16:01:59,409] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000600000800080001120411440100ff090004001c0000
+[2021-11-16 16:02:00,204] [INFO] [MyS7Client.findArpPacket] -> passive detected a probable crush e0dca0439b86e0e1a91549c508060001080006040001e0e1a91549c5c0a80189e0dca0439b86c0a801bc
+[2021-11-16 16:02:04,416] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-16 16:02:06,450] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-16 16:02:09,461] [INFO] [BLocate.locate] -> find a crush
+[2021-11-16 16:02:09,461] [INFO] [valition.handleCrush] -> handling crush
+[2021-11-16 16:02:09,462] [INFO] [valition.__closePlugin] -> trying to switch off the plugin
+[2021-11-16 16:02:09,851] [INFO] [valition.__closePlugin] -> Switch off Plugin success!
+[2021-11-16 16:02:11,867] [INFO] [valition.__openPlugin] -> trying to switch on the plugin
+[2021-11-16 16:02:12,195] [INFO] [valition.__openPlugin] -> Switch on the Plugin success!
+[2021-11-16 16:02:12,197] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-16 16:02:20,228] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-16 16:02:20,229] [INFO] [MyS7Client.connect] -> Close old socket!
+[2021-11-16 16:02:20,229] [INFO] [MyS7Client.connect] -> Start connect PLC
+[2021-11-16 16:02:20,345] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000070000080000f000000a000a00f0
+[2021-11-16 16:02:20,346] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000700000800000000f0000003000300f0
+[2021-11-16 16:02:20,346] [INFO] [BLocate.locate] -> chosenPacket from 0 to 3 ; leftPackets from 3 to 6.
+[2021-11-16 16:02:20,348] [INFO] [MyS7Client.findArpPacket] -> passive detected a probable crush e0dca0439b86e0e1a91549c508060001080006040001e0e1a91549c5c0a80189e0dca0439b86c0a801bc
+[2021-11-16 16:02:20,351] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000800000800080001120411440100ff090004001c0000
+[2021-11-16 16:02:25,357] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-16 16:02:25,413] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-16 16:02:25,415] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000900000800080001120411440100ff090004001c0000
+[2021-11-16 16:02:30,745] [INFO] [MyS7Client.send_s7_packet] -> Send the crush packet
+[2021-11-16 16:02:30,746] [INFO] [MyS7Client.send_s7_packet] -> [request]0300001f02f080320100000a00000e00000401120a10010003000083000001
+[2021-11-16 16:02:35,754] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000b00000800080001120411440100ff090004001c0000
+[2021-11-16 16:02:41,703] [INFO] [MyS7Client.findArpPacket] -> passive detected a probable crush e0dca0439b86e0e1a91549c508060001080006040001e0e1a91549c5c0a80189e0dca0439b86c0a801bc
+[2021-11-16 16:02:43,759] [INFO] [BLocate.locate] -> chosenPacket from 0 to 1 ; leftPackets from 1 to 3.
+[2021-11-16 16:02:43,762] [INFO] [MyS7Client.findArpPacket] -> passive detected a probable crush e0dca0439b86e0e1a91549c508060001080006040001e0e1a91549c5c0a80189e0dca0439b86c0a801bc
+[2021-11-16 16:02:43,768] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000c00000800080001120411440100ff090004001c0000
+[2021-11-16 16:02:48,769] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-16 16:02:50,793] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-16 16:02:53,807] [INFO] [BLocate.locate] -> find a crush
+[2021-11-16 16:02:53,808] [INFO] [valition.handleCrush] -> handling crush
+[2021-11-16 16:02:53,809] [INFO] [valition.__closePlugin] -> trying to switch off the plugin
+[2021-11-16 16:02:54,154] [INFO] [valition.__closePlugin] -> Switch off Plugin success!
+[2021-11-16 16:02:56,167] [INFO] [valition.__openPlugin] -> trying to switch on the plugin
+[2021-11-16 16:03:01,633] [INFO] [valition.__openPlugin] -> Switch on the Plugin success!
+[2021-11-16 16:03:01,635] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-16 16:03:13,785] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-16 16:03:13,785] [INFO] [MyS7Client.connect] -> Close old socket!
+[2021-11-16 16:03:13,786] [INFO] [MyS7Client.connect] -> Start connect PLC
+[2021-11-16 16:03:13,998] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f080320100000d0000080000f000000a000a00f0
+[2021-11-16 16:03:14,000] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000d00000800000000f0000003000300f0
+[2021-11-16 16:03:14,000] [INFO] [BLocate.locate] -> chosenPacket from 0 to 1 ; leftPackets from 1 to 2.
+[2021-11-16 16:03:14,002] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000e00000800080001120411440100ff090004001c0000
+[2021-11-16 16:03:19,011] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000f00000800080001120411440100ff090004001c0000
+[2021-11-16 16:03:27,031] [INFO] [BLocate.locate] -> Crush Packet is 0300002102f080320700000f00000800080001120411440100ff090004001c0000
+[2021-11-16 16:03:53,704] [INFO] [MyS7Client.findArpPacket] -> passive detected a probable crush e0dca0439b86e0e1a91549c508060001080006040001e0e1a91549c5c0a80189e0dca0439b86c0a801bc
