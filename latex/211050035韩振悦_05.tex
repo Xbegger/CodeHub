@@ -57,7 +57,7 @@
     (8)顾客在店内等待时间超过10min的概率\\
     \begin{gather*}
         \text{已知顾客在系统中的逗留时间T，服从$\mu-\lambda$的负指数分布}\\
-        \text{取 $t \sim \mu $的负指数分布}\\
+        \text{取服务时间 $t \sim \mu $的负指数分布}\\
         P(T_q > 10) = \int_t P(T_q + t > 10 + t) \cdot P(t) 
     = \int_t P(T > 10 + t) \cdot P(t)
     = \int_t e^{-(\mu-\lambda)(10+t)} \times e^{-\mu t}
