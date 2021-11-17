@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  14 NOV 2021 11:10
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.13)  17 NOV 2021 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,22 +426,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-Missing character: There is no 取 (U+53D6) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 负 (U+8D1F) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 指 (U+6307) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 数 (U+6570) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 取 (U+53D6) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 负 (U+8D1F) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 指 (U+6307) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 数 (U+6570) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 分 (U+5206) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no 布 (U+5E03) in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (91.77264pt too wide) detected at line 65
+Overfull \hbox (46.90672pt too wide) detected at line 65
 []
  []
 
@@ -456,7 +442,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  6856 strings out of 476919
  187553 string characters out of 5818255
- 531932 words of memory out of 5000000
+ 532932 words of memory out of 5000000
  26791 multiletter control sequences out of 15000+600000
  405136 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
