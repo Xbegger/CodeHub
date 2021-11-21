@@ -1,0 +1,57 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    1.验证$S=\{(x_1,x_2)||x_2|<x_1\}$是凸集
+    \begin{gather*}
+        |x_2| < x_1 \rightarrow x_1 > 0, x_1 > x_2 > - x_1\\
+        \text{在S中取} x(x_1, x_2),y(y_1, y_2)\\
+        z = \lambda x + (1-\lambda)y = (\lambda x_1 + (1-\lambda) y_1, \lambda x_2 + (1-\lambda)y_2))\\
+        |x_2| < x_1 \Leftrightarrow x_1^2 - x_2^2 > 0\\
+        z_1^2 - z_2^2 = \left[\lambda x_1 + (1-\lambda) y_1\right]^2 - \left[\lambda x_2 + (1-\lambda)y_2\right]^2\\
+        =\left[\lambda x_1 + (1-\lambda) y_1 + \lambda x_2 + (1-\lambda)y_2\right] 
+        \cdot \left[\lambda x_1 + (1-\lambda) y_1 - \lambda x_2 + (1-\lambda)y_2\right]\\
+        = \left[\lambda(x_1 + x_2) + (1-\lambda) (y_1 + y_2)\right]
+        + \left[\lambda(x_1 - x_2) + (1-\lambda) (y_1 - y_2)\right]\\
+        \begin{cases}
+            x_1 > 0\\
+            x_1 > x_2 > - x_1\\
+        \end{cases}
+        \Rightarrow x_1 + x_2 > 0, x_1 - x_2 > 0\\
+        \text{同理可得} y_1 + y_2 > 0, y_1 - y_2 > 0\\
+        \Rightarrow z_1^2 - z_2^2 > 0 \\
+        x_1 > 0 and y_1 > 0 \Rightarrow z_1 > 0 \\
+        \begin{cases}
+            z_1 > 0\\
+            z_1^2 - z_2^2 > 0
+        \end{cases}
+        \Rightarrow |z_2| < z_1,\text{所以S是凸集}
+    \end{gather*}
+    2.判断$f(x)=x_1^2 + 2x_2^2$是凸函数或严格凸函数
+    \begin{gather*}
+        \text{取}x(x_1, x_2),y(y_1, y_2)\\
+        z = \lambda x + (1 - \lambda)y = (\lambda x_1 + (1-\lambda) y_1, \lambda x_2 + (1-\lambda)y_2)\\
+        f(z) = (\lambda x_1 + (1-\lambda) y_1)^2 + 2 (\lambda x_2 + (1-\lambda)y_2)^2\\
+        = \lambda^2 (x_1^2 + 2 x_2^2) + (1 - \lambda)^2(y_1^2 + 2y_2^2) + 2\lambda(1 - \lambda)(x_1y_1 + 2x_2y_2)\\
+        \text{依据基本不等式} ab \le \frac{a^2 + b^2}{2}\\
+        f(z) \le \lambda^2 (x_1^2 + 2 x_2^2) + (1 - \lambda)^2(y_1^2 + 2y_2^2)
+        + \lambda(1 - \lambda)(x_1^2 + y_1^2 + 2 (x_2^2 + y_2^2) )\\
+        = \lambda (x_1^2 + 2x_2^2) + (1-\lambda)(y_1^2 + 2 y_2^2)\\
+        = \lambda f(x) + (1-\lambda)f(y)\\
+        \text{所以$f(x)=x_1^2 + 2x_2^2$是凸函数}
+    \end{gather*}
+\end{document}

@@ -7,7 +7,6 @@ public class ArithmeticOperator {
         double d = 10 / 4;
         System.out.println(d);
 
-
         // % 取模 取余
         // a % b = a - a/b * b
         System.out.println(10 % 3); // 1
