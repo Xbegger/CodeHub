@@ -9,15 +9,18 @@ from icssploit.protocols.s7comm import *
 
 class BLocate(Base):
 
-    def __init__(self, candidatePackets, handleCrush):
+    def __init__(self, handleCrush):
         super(BLocate, self).__init__()
 
-        self.candidatePackets = candidatePackets
+        self.candidatePackets = None
         self.__s7Client = handleCrush.getS7Client()
         self.__handleCrush = handleCrush
 
 
     def locate(self):
+        if self.candidatePackets == None:
+            return None
+            
         self.logger.info("Start binary search crush")
         candidatePackets = self.candidatePackets
         while(candidatePackets):
