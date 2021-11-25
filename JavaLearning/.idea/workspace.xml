@@ -42,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -49,13 +50,13 @@
       <recent name="hsp_Java" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.HouseRentApp">
-    <configuration name="ArithmeticOperatorExercise02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter4.ArithmeticOperatorExercise02" />
+  <component name="RunManager" selected="Application.System_">
+    <configuration name="ArraysMethod01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.ArraysMethod01" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.courseExercise.chapter4.*" />
+          <option name="PATTERN" value="hsp_Java.chpter13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter8.Homework03" />
+    <configuration name="ArraysMethod02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.ArraysMethod02" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.courseExercise.chapter8.*" />
+          <option name="PATTERN" value="hsp_Java.chpter13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HouseRentApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.house.HouseRentApp" />
+    <configuration name="MathMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.MathMethod" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.courseExercise.house.*" />
+          <option name="PATTERN" value="hsp_Java.chpter13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RelationOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter4.RelationOperation" />
+    <configuration name="StringAndStringBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.StringAndStringBuffer" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter4.*" />
+          <option name="PATTERN" value="hsp_Java.chpter13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter3.String01" />
+    <configuration name="System_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.System_" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter3.*" />
+          <option name="PATTERN" value="hsp_Java.chpter13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.HouseRentApp" />
-        <item itemvalue="应用程序.String01" />
-        <item itemvalue="应用程序.Homework03" />
-        <item itemvalue="应用程序.RelationOperation" />
-        <item itemvalue="应用程序.ArithmeticOperatorExercise02" />
+        <item itemvalue="Application.System_" />
+        <item itemvalue="Application.ArraysMethod02" />
+        <item itemvalue="Application.ArraysMethod01" />
+        <item itemvalue="Application.MathMethod" />
+        <item itemvalue="Application.StringAndStringBuffer" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +151,10 @@
       <workItem from="1637461796459" duration="3765000" />
       <workItem from="1637543853510" duration="5548000" />
       <workItem from="1637571405230" duration="13333000" />
+      <workItem from="1637630618353" duration="42000" />
+      <workItem from="1637630677572" duration="5876000" />
+      <workItem from="1637744823241" duration="4384000" />
+      <workItem from="1637822784738" duration="18960000" />
     </task>
     <servers />
   </component>
