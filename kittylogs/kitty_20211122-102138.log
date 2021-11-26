@@ -1,0 +1,30 @@
+[2021-11-22 10:21:48,158] [INFO] [base._load_session] -> No session loaded
+[2021-11-22 10:21:48,164] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20211122-102138.log
+
+                 Total possible mutation count: 1000
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-11-22 10:21:48,167] [INFO] [base.start] -> Performing environment test
+[2021-11-22 10:21:50,279] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[2021-11-22 10:21:50,279] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-11-22 10:21:53,299] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "F:\Anaconda\envs\S7comm\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+  File "F:\Anaconda\envs\S7comm\lib\socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+
+[2021-11-22 10:21:53,299] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...

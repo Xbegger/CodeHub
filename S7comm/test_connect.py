@@ -95,15 +95,19 @@ def sendMethod(target):
         item = [("DB1", "2.0", "byte", 3)]
         transport_size, block_num, area_type, address = target.get_item_pram_from_item(item[0])
         length = int(item[0][3])
-        READ_PACKET = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job", 
-                                                               Parameters=S7ReadVarParameterReq(Items=S7ReadVarItemsReq(TransportSize=transport_size,
-                                                                                                                        GetLength=length,
-                                                                                                                        BlockNum=block_num,
-                                                                                                                        AREAType=area_type,
-                                                                                                                        Address=address
-                                                                                                                        )))
+        # READ_PACKET = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job", 
+                                                            #    Parameters=S7ReadVarParameterReq(Items=S7ReadVarItemsReq(TransportSize=transport_size,
+                                                            #                                                             GetLength=length,
+                                                            #                                                             BlockNum=block_num,
+                                                            #                                                             AREAType=area_type,
+                                                            #                                                             Address=address
+                                                            #                                                             )))
+                                                                                                                
+        pkt = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
+                                        Parameters=S7ReadSZLParameterReq(),
+                                        Data=S7ReadSZLDataReq())
         
-        target.send_s7_packet(READ_PACKET)
+        target.send_s7_packet(pkt)
 
 
 if __name__ == '__main__':

