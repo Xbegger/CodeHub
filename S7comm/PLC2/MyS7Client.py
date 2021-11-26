@@ -246,6 +246,7 @@ class MyS7Client(Base):
 
 
     def crushListen(self):
+        self.logger.info("start listen arp")
         filter = "(not ether dst ff:ff:ff:ff:ff:ff) and " \
                 + "arp dst host " + self._ip \
                 + " and arp src host " + self._src_ip 

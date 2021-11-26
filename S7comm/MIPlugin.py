@@ -1,3 +1,4 @@
+from math import trunc
 from miio.miioprotocol import MiIOProtocol
 from typing import Any
 
@@ -21,6 +22,7 @@ class MIPlugin():
         self._protocol = MiIOProtocol(
             ip, token, start_id, debug, lazy_discover, timeout
         )
+        self._protocol.discover = True
 
     def send(
         self,
