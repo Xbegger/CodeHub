@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0eb813a-4726-4127-bc89-d7fe83097c4c" name="更改" comment="更改" />
+    <list default="true" id="c0eb813a-4726-4127-bc89-d7fe83097c4c" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,20 +43,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="http.certificates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hsp_Java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.System_">
-    <configuration name="ArraysMethod01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.ArraysMethod01" />
+  <component name="RunManager" selected="Application.HashSetExercise">
+    <configuration name="HashSet01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.HashSet01" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chpter13.*" />
+          <option name="PATTERN" value="hsp_Java.chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraysMethod02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.ArraysMethod02" />
+    <configuration name="HashSetExercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter14.HashSetExercise" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chpter13.*" />
+          <option name="PATTERN" value="hsp_Java.courseExercise.chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.MathMethod" />
+    <configuration name="HashSetSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.HashSetSource" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chpter13.*" />
+          <option name="PATTERN" value="hsp_Java.chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringAndStringBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.StringAndStringBuffer" />
+    <configuration name="HashSet_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.HashSet_" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chpter13.*" />
+          <option name="PATTERN" value="hsp_Java.chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="System_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chpter13.System_" />
+    <configuration name="SetMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.SetMethod" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chpter13.*" />
+          <option name="PATTERN" value="hsp_Java.chapter14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.System_" />
-        <item itemvalue="Application.ArraysMethod02" />
-        <item itemvalue="Application.ArraysMethod01" />
-        <item itemvalue="Application.MathMethod" />
-        <item itemvalue="Application.StringAndStringBuffer" />
+        <item itemvalue="Application.HashSetExercise" />
+        <item itemvalue="Application.HashSetSource" />
+        <item itemvalue="Application.HashSet01" />
+        <item itemvalue="Application.HashSet_" />
+        <item itemvalue="Application.SetMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +155,13 @@
       <workItem from="1637630677572" duration="5876000" />
       <workItem from="1637744823241" duration="4384000" />
       <workItem from="1637822784738" duration="18960000" />
+      <workItem from="1637889845811" duration="57000" />
+      <workItem from="1637889919360" duration="1263000" />
+      <workItem from="1637906332735" duration="149000" />
+      <workItem from="1637906498897" duration="65000" />
+      <workItem from="1637916751136" duration="11254000" />
+      <workItem from="1637988023192" duration="17817000" />
+      <workItem from="1638148814988" duration="2524000" />
     </task>
     <servers />
   </component>

@@ -101,7 +101,7 @@ class HandleCrush(Base):
 
 
 
-target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.137", rack=0, slot=1)
+target = MyS7Client(name="test", ip="192.168.1.188", src_ip="192.168.1.140", rack=0, slot=1)
 
 pkt = TPKT() / COTPDT( EOT=1 ) / S7Header(ROSCTR="UserData",
                                         Parameters=S7ReadSZLParameterReq(),
@@ -136,14 +136,14 @@ hc = HandleCrush(target, plug)
 bl = BLocate(hc)
 
 MAX_CANDIDATE = 40
-MAX_PACKETS = 1000
+MAX_PACKETS = 100000
 
 crushListenThread = threading.Thread(target=target.crushListen)
 crushListenThread.start()
 while(True):
     # 生成模糊测试的报文
     packets = [pkt for i in range(MAX_PACKETS) ]
-    crushNum = random.randint(0, 200)
+    crushNum = random.randint(0, 20)
     packets[crushNum] = crushPacket
     target.logger.info("Will send %d packets, the crush packet is %d" %(MAX_PACKETS, crushNum))
 
@@ -153,6 +153,7 @@ while(True):
     # 开始监听PC端ARP
     target.run.set()
 
+    # input('continue')
     # 发送模糊测试报文，检测到奔溃停止发送
     for pkt in packets: 
         target.send_s7_packet(pkt)

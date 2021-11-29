@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
     target.connect()
     # target2.connect()
-
+    input('continue')
     sendThread = threading.Thread(target=sendMethod, args=(target,))
     # send2Thread = threading.Thread(target=sendMethod, args=(target2,))
     recvThread = threading.Thread(target=target.receive)
