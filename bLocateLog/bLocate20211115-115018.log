@@ -1,0 +1,43 @@
+[2021-11-15 11:50:19,547] [INFO] [BLocate.locate] -> Start binary search crush
+[2021-11-15 11:50:19,548] [INFO] [BLocate.locate] -> chosenPacket from 0 to 5 ; leftPackets from 5 to 10.
+[2021-11-15 11:50:19,768] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000010000080000f000000a000a00f0
+[2021-11-15 11:50:19,770] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000100000800000000f0000003000300f0
+[2021-11-15 11:50:19,778] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000200000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:19,787] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000300000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:20,351] [INFO] [MyS7Client.send_s7_packet] -> Send the crush packet
+[2021-11-15 11:50:20,357] [INFO] [MyS7Client.send_s7_packet] -> [request]0300001f02f080320100000400000e00000401120a10010003000083000001
+[2021-11-15 11:50:20,362] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000500000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:20,368] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000600000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:23,370] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:29,402] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-15 11:50:29,403] [INFO] [BLocate.locate] -> find a crush
+[2021-11-15 11:50:29,405] [INFO] [valition.handleCrush] -> handling crush
+[2021-11-15 11:50:29,406] [INFO] [valition.__closePlugin] -> trying to switch off the plugin
+[2021-11-15 11:50:29,863] [INFO] [valition.__closePlugin] -> Switch off Plugin success!
+[2021-11-15 11:50:31,866] [INFO] [valition.__openPlugin] -> trying to switch on the plugin
+[2021-11-15 11:50:32,327] [INFO] [valition.__openPlugin] -> Switch on the Plugin success!
+[2021-11-15 11:50:36,342] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:39,384] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:50:39,385] [INFO] [BLocate.locate] -> chosenPacket from 0 to 2 ; leftPackets from 2 to 5.
+[2021-11-15 11:50:39,785] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000070000080000f000000a000a00f0
+[2021-11-15 11:50:39,787] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000700000800000000f0000003000300f0
+[2021-11-15 11:50:39,797] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000800000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:39,804] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000900000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:42,807] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:42,829] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:50:42,830] [INFO] [BLocate.locate] -> chosenPacket from 0 to 1 ; leftPackets from 1 to 3.
+[2021-11-15 11:50:43,067] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f080320100000a0000080000f000000a000a00f0
+[2021-11-15 11:50:43,069] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000a00000800000000f0000003000300f0
+[2021-11-15 11:50:43,574] [INFO] [MyS7Client.send_s7_packet] -> Send the crush packet
+[2021-11-15 11:50:43,578] [INFO] [MyS7Client.send_s7_packet] -> [request]0300001f02f080320100000b00000e00000401120a10010003000083000001
+[2021-11-15 11:50:46,580] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:52,605] [INFO] [MyS7Client.onlinePLC] -> the PLC is offline
+[2021-11-15 11:50:52,606] [INFO] [BLocate.locate] -> find a crush
+[2021-11-15 11:50:52,607] [INFO] [valition.handleCrush] -> handling crush
+[2021-11-15 11:50:52,609] [INFO] [valition.__closePlugin] -> trying to switch off the plugin
+[2021-11-15 11:50:53,098] [INFO] [valition.__closePlugin] -> Switch off Plugin success!
+[2021-11-15 11:50:55,102] [INFO] [valition.__openPlugin] -> trying to switch on the plugin
+[2021-11-15 11:50:55,551] [INFO] [valition.__openPlugin] -> Switch on the Plugin success!
+[2021-11-15 11:50:59,565] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:51:02,725] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:51:02,736] [INFO] [BLocate.locate] -> Crush Packet is 0300001f02f080320100000b00000e00000401120a10010003000083000001

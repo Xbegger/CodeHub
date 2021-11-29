@@ -56,7 +56,7 @@ class MyS7Client(Base):
 
     def connect(self):
         sock = socket.socket()
-        sock.settimeout(self._timeout)
+        # sock.settimeout(self._timeout)
         sock.connect((self._ip, self._port))
         self._connection = StreamSocket(sock, Raw)
         packet1 = TPKT() / COTPCR()

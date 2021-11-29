@@ -1,0 +1,31 @@
+[2021-11-15 11:49:55,404] [INFO] [BLocate.locate] -> Start binary search crush
+[2021-11-15 11:49:55,405] [INFO] [BLocate.locate] -> chosenPacket from 0 to 5 ; leftPackets from 5 to 10.
+[2021-11-15 11:49:55,588] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000010000080000f000000a000a00f0
+[2021-11-15 11:49:55,590] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000100000800000000f0000003000300f0
+[2021-11-15 11:49:55,598] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000200000800080001120411440100ff090004001c0000
+[2021-11-15 11:49:55,604] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000300000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:00,617] [ERROR] [MyS7Client.send_s7_packet] -> Unable to discover the device 192.168.1.133
+[2021-11-15 11:50:00,625] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000500000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:00,635] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000600000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:03,642] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:03,664] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:50:03,665] [INFO] [BLocate.locate] -> chosenPacket from 0 to 2 ; leftPackets from 2 to 5.
+[2021-11-15 11:50:03,899] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000070000080000f000000a000a00f0
+[2021-11-15 11:50:03,901] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000700000800000000f0000003000300f0
+[2021-11-15 11:50:03,909] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000800000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:03,917] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000900000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:06,922] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:06,942] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:50:06,944] [INFO] [BLocate.locate] -> chosenPacket from 0 to 1 ; leftPackets from 1 to 3.
+[2021-11-15 11:50:07,149] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f080320100000a0000080000f000000a000a00f0
+[2021-11-15 11:50:07,151] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000a00000800000000f0000003000300f0
+[2021-11-15 11:50:07,159] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000b00000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:10,168] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:10,188] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:50:10,189] [INFO] [BLocate.locate] -> chosenPacket from 0 to 1 ; leftPackets from 1 to 2.
+[2021-11-15 11:50:10,423] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f080320100000c0000080000f000000a000a00f0
+[2021-11-15 11:50:10,424] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000c00000800000000f0000003000300f0
+[2021-11-15 11:50:10,432] [INFO] [MyS7Client.send_s7_packet] -> [request]0300002102f080320700000d00000800080001120411440100ff090004001c0000
+[2021-11-15 11:50:13,445] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-15 11:50:13,466] [INFO] [MyS7Client.onlinePLC] -> the PLC is online
+[2021-11-15 11:50:13,469] [INFO] [BLocate.locate] -> Crush Packet is 0300002102f080320700000d00000800080001120411440100ff090004001c0000

@@ -1,0 +1,2 @@
+[2021-11-22 10:24:26,274] [INFO] [BLocate.locate] -> Start binary search crush
+[2021-11-22 10:24:26,274] [INFO] [BLocate.locate] -> chosenPacket from 0 to 50 ; leftPackets from 50 to 100.
