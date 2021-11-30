@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+        //onLoad事件的方法
+        function onLoadFun(){
+            alert("静态注册 onload 事件，所有代码");
+        }
+
+        //onLoad 事件动态注册，是固定写法
+        window.onload = function(){
+            alert("动态注册的onload事件");
+        }
+    </script>
+<!--
+    <body onload="onLoadFun();"></body>
+
+-->
+</head>
+</html>

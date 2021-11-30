@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      function onclickFun(){
+          alert("静态注册 onclick 事件")
+      }
+
+      window.onload = function(){
+      // 1 获取标签对象
+      /*
+      * document 是 JavaScript 语言提供的一个对象（文档）<br/>
+      * get 获取
+      * Element 元素（就是标签）
+      * By 通过。。 由。。经。。。
+      * Id id 属性
+      *
+      * getElementById 通过 id 属性获取标签对象
+      **/
+          var btnObj = document.getElementById("btn01")
+
+          btnObj.onclick = function(){
+              alert("动态注册 onclick 事件")
+          }
+       }
+</script>
+</head>
+<body>
+    <!--静态注册 onClick 事件-->
+    <button onclick="onclickFun();">按钮 1</button>
+    <button id = "btn01">按钮 2</button>
+</body>
+</html>
