@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.onLoad = function(){
+            var btnObj = document.getElementById("btnId");
+            btnObj.onclick = function (){
+                alert("js 原生的单击事件")
+            }
+        }
+
+
+        $(function(){
+            var $btnObj = $("#btnId");
+            $btnObj.click(function(){
+                alert("jQuery 的单击事件")
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btnId">SayHello</button>
+</body>
+</html>
