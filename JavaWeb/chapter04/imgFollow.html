@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        #small {
+            margin-top: 150px;
+        }
+        #showBig{
+            position: absolute;
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           $("#small").bind("mouseover mouseout mousemove", function (event) {
+               if(event.type == "mouseover"){
+                   $("#showBig").show();
+               }else if(event.type  == "mouseout"){
+                   $("#showBig").hide();
+               }else if(event.type  == "mousemove"){
+                   $("#showBig").offset({
+                       left: event.pageX + 10,
+                       top: event.pageY + 10
+                   });
+               }
+           })
+        });
+    </script>
+</head>
+<body>
+    <img id="small" src="img/small.jpg" />
+    <div id="showBig">
+        <img src="img/big.jpg">
+    </div>
+</body>
+</html>

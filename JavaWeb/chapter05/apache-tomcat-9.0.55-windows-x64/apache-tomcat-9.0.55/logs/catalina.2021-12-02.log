@@ -1,0 +1,1114 @@
+02-Dec-2021 21:45:56.713 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 21:45:56.733 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 21:45:56.733 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 21:45:56.734 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 21:45:56.734 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 21:45:56.735 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 21:45:56.735 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 21:45:56.735 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 21:45:56.735 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 21:45:56.736 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:45:56.736 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:45:56.739 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 21:45:56.740 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 21:45:56.741 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 21:45:56.741 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 21:45:56.744 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 21:45:56.744 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:45:56.745 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:45:56.745 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 21:45:56.747 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 21:45:56.748 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 21:45:56.748 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 21:45:56.753 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 21:45:57.212 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 21:45:57.236 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[694]毫秒内初始化
+02-Dec-2021 21:45:57.277 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 21:45:57.278 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 21:45:57.288 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 21:45:57.802 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[342]毫秒。
+02-Dec-2021 21:45:57.822 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[534]毫秒内完成
+02-Dec-2021 21:45:57.823 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 21:45:58.027 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[204]毫秒内完成
+02-Dec-2021 21:45:58.030 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 21:45:58.052 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[21]毫秒内完成
+02-Dec-2021 21:45:58.052 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 21:45:58.070 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[18]毫秒内完成
+02-Dec-2021 21:45:58.071 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 21:45:58.085 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[14]毫秒内完成
+02-Dec-2021 21:45:58.087 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 21:45:58.099 信息 [main] org.apache.catalina.startup.Catalina.start [862]毫秒后服务器启动
+02-Dec-2021 21:46:08.630 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:46:08.630 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:46:39.632 信息 [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:46:39.633 信息 [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:47:53.400 信息 [http-nio-8080-exec-5] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:47:53.400 信息 [http-nio-8080-exec-6] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:48:28.445 信息 [http-nio-8080-exec-7] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:48:28.447 信息 [http-nio-8080-exec-8] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:52:30.862 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 21:52:30.865 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 21:52:30.865 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 21:52:30.866 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 21:52:30.866 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 21:52:30.866 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 21:52:30.866 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 21:52:30.866 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 21:52:30.866 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 21:52:30.867 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:52:30.867 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:52:30.867 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 21:52:30.867 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 21:52:30.867 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 21:52:30.868 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 21:52:30.870 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 21:52:30.870 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:52:30.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:52:30.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 21:52:30.873 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 21:52:30.874 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 21:52:30.874 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 21:52:30.879 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 21:52:31.105 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 21:52:31.120 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[407]毫秒内初始化
+02-Dec-2021 21:52:31.141 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 21:52:31.142 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 21:52:31.149 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 21:52:31.591 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[295]毫秒。
+02-Dec-2021 21:52:31.612 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[463]毫秒内完成
+02-Dec-2021 21:52:31.613 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 21:52:31.803 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[190]毫秒内完成
+02-Dec-2021 21:52:31.806 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 21:52:31.823 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[17]毫秒内完成
+02-Dec-2021 21:52:31.824 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 21:52:31.839 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[15]毫秒内完成
+02-Dec-2021 21:52:31.840 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 21:52:31.853 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[13]毫秒内完成
+02-Dec-2021 21:52:31.855 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 21:52:31.867 信息 [main] org.apache.catalina.startup.Catalina.start [746]毫秒后服务器启动
+02-Dec-2021 21:52:46.181 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:52:46.181 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:56:06.246 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 21:56:06.249 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 21:56:06.249 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 21:56:06.250 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 21:56:06.250 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 21:56:06.250 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 21:56:06.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 21:56:06.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 21:56:06.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 21:56:06.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:56:06.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:56:06.251 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 21:56:06.252 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 21:56:06.252 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 21:56:06.252 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 21:56:06.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 21:56:06.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:56:06.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 21:56:06.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 21:56:06.258 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 21:56:06.258 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 21:56:06.259 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 21:56:06.263 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 21:56:06.494 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 21:56:06.509 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[420]毫秒内初始化
+02-Dec-2021 21:56:06.532 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 21:56:06.533 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 21:56:06.539 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 21:56:06.997 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[307]毫秒。
+02-Dec-2021 21:56:07.015 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[476]毫秒内完成
+02-Dec-2021 21:56:07.016 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 21:56:07.210 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[194]毫秒内完成
+02-Dec-2021 21:56:07.213 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 21:56:07.232 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[19]毫秒内完成
+02-Dec-2021 21:56:07.233 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 21:56:07.250 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[17]毫秒内完成
+02-Dec-2021 21:56:07.251 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 21:56:07.265 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[14]毫秒内完成
+02-Dec-2021 21:56:07.268 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 21:56:07.280 信息 [main] org.apache.catalina.startup.Catalina.start [770]毫秒后服务器启动
+02-Dec-2021 21:56:07.303 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:56:07.303 信息 [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 21:56:07.303 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:00:05.538 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 22:00:05.541 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 22:00:05.541 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 22:00:05.541 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:00:05.542 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:00:05.543 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 22:00:05.543 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 22:00:05.543 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 22:00:05.543 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 22:00:05.546 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 22:00:05.546 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:00:05.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:00:05.547 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 22:00:05.549 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 22:00:05.550 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 22:00:05.550 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 22:00:05.554 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 22:00:05.771 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 22:00:05.786 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[398]毫秒内初始化
+02-Dec-2021 22:00:05.807 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 22:00:05.807 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 22:00:05.816 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 22:00:06.270 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[299]毫秒。
+02-Dec-2021 22:00:06.288 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[472]毫秒内完成
+02-Dec-2021 22:00:06.289 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 22:00:06.481 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[192]毫秒内完成
+02-Dec-2021 22:00:06.484 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 22:00:06.503 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[19]毫秒内完成
+02-Dec-2021 22:00:06.503 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 22:00:06.519 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[16]毫秒内完成
+02-Dec-2021 22:00:06.520 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 22:00:06.531 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[11]毫秒内完成
+02-Dec-2021 22:00:06.535 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 22:00:06.547 信息 [main] org.apache.catalina.startup.Catalina.start [760]毫秒后服务器启动
+02-Dec-2021 22:00:08.530 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:00:08.530 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:02:36.708 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:02:36.734 严重 [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError 分析第[1]行第[1]列处的致命错误
+	org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; 文件提前结束。
+		at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+		at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+		at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1552)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:632)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:02:36.748 严重 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; 文件提前结束。
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1239)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1552)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:632)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:02:36.754 严重 [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError 分析第[1]行第[1]列处的致命错误
+	org.xml.sax.SAXParseException; systemId: file:/D:/CodeHub/JavaWeb/chapter05/apache-tomcat-9.0.55-windows-x64/apache-tomcat-9.0.55/conf/Catalina/localhost/test.xml; lineNumber: 1; columnNumber: 1; 文件提前结束。
+		at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+		at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+		at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:735)
+		at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:679)
+		at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:949)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:314)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:137)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:02:36.756 严重 [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.processContextConfig 解析context.xml错误，[/test]
+	org.xml.sax.SAXParseException; systemId: file:/D:/CodeHub/JavaWeb/chapter05/apache-tomcat-9.0.55-windows-x64/apache-tomcat-9.0.55/conf/Catalina/localhost/test.xml; lineNumber: 1; columnNumber: 1; 文件提前结束。
+		at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+		at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+		at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+		at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+		at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1014)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1535)
+		at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:735)
+		at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:679)
+		at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:949)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:314)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:137)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:02:36.758 严重 [Catalina-utility-1] org.apache.catalina.startup.ContextConfig.processContextConfig 发生在 [1] 行 [1] 列
+02-Dec-2021 22:02:36.761 严重 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 25 more
+02-Dec-2021 22:02:36.769 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[61]ms内完成
+02-Dec-2021 22:03:26.821 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 正在取消部署上下文[/test]
+02-Dec-2021 22:03:26.827 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:03:26.829 警告 [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.endElement 找不到匹配的规则[Content]
+02-Dec-2021 22:03:26.830 严重 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 25 more
+02-Dec-2021 22:03:26.832 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[4]ms内完成
+02-Dec-2021 22:03:46.848 信息 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy 正在取消部署上下文[/test]
+02-Dec-2021 22:03:46.848 信息 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:03:46.851 警告 [Catalina-utility-2] org.apache.tomcat.util.digester.Digester.endElement 找不到匹配的规则[Content]
+02-Dec-2021 22:03:46.851 严重 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1667)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:315)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1365)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1369)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1347)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 25 more
+02-Dec-2021 22:03:46.852 信息 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[4]ms内完成
+02-Dec-2021 22:04:35.908 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 22:04:35.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 22:04:35.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 22:04:35.911 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:04:35.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:04:35.913 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 22:04:35.913 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 22:04:35.913 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 22:04:35.913 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 22:04:35.916 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 22:04:35.916 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:04:35.916 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:04:35.917 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 22:04:35.919 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 22:04:35.920 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 22:04:35.921 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 22:04:35.924 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 22:04:36.161 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 22:04:36.179 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[423]毫秒内初始化
+02-Dec-2021 22:04:36.203 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 22:04:36.203 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 22:04:36.213 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:04:36.239 警告 [main] org.apache.tomcat.util.digester.Digester.endElement 找不到匹配的规则[Content]
+02-Dec-2021 22:04:36.240 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 37 more
+02-Dec-2021 22:04:36.244 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[29]ms内完成
+02-Dec-2021 22:04:36.245 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 22:04:36.695 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[306]毫秒。
+02-Dec-2021 22:04:36.713 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[468]毫秒内完成
+02-Dec-2021 22:04:36.714 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 22:04:36.919 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[205]毫秒内完成
+02-Dec-2021 22:04:36.922 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 22:04:36.942 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[20]毫秒内完成
+02-Dec-2021 22:04:36.943 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 22:04:36.967 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[24]毫秒内完成
+02-Dec-2021 22:04:36.967 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 22:04:36.982 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[15]毫秒内完成
+02-Dec-2021 22:04:36.985 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 22:04:37.000 信息 [main] org.apache.catalina.startup.Catalina.start [820]毫秒后服务器启动
+02-Dec-2021 22:04:40.373 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:04:40.373 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:08:23.685 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 22:08:23.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 22:08:23.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 22:08:23.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 22:08:23.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 22:08:23.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 22:08:23.690 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 22:08:23.690 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 22:08:23.690 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 22:08:23.690 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:23.690 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:23.691 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 22:08:23.691 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 22:08:23.691 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 22:08:23.691 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 22:08:23.694 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 22:08:23.695 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:23.697 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:23.697 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 22:08:23.700 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 22:08:23.700 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 22:08:23.701 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 22:08:23.705 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 22:08:23.934 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 22:08:23.948 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[415]毫秒内初始化
+02-Dec-2021 22:08:23.968 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 22:08:23.968 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 22:08:23.974 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:08:24.002 警告 [main] org.apache.tomcat.util.digester.Digester.endElement 找不到匹配的规则[Content]
+02-Dec-2021 22:08:24.004 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 37 more
+02-Dec-2021 22:08:24.007 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[31]ms内完成
+02-Dec-2021 22:08:24.009 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 22:08:24.452 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[305]毫秒。
+02-Dec-2021 22:08:24.469 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[460]毫秒内完成
+02-Dec-2021 22:08:24.470 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 22:08:24.661 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[191]毫秒内完成
+02-Dec-2021 22:08:24.664 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 22:08:24.682 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[18]毫秒内完成
+02-Dec-2021 22:08:24.682 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 22:08:24.700 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[18]毫秒内完成
+02-Dec-2021 22:08:24.701 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 22:08:24.713 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[13]毫秒内完成
+02-Dec-2021 22:08:24.715 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 22:08:24.725 信息 [main] org.apache.catalina.startup.Catalina.start [777]毫秒后服务器启动
+02-Dec-2021 22:08:30.641 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:08:30.641 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:08:54.123 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 22:08:54.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 22:08:54.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 22:08:54.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 22:08:54.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 22:08:54.126 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 22:08:54.127 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 22:08:54.127 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 22:08:54.127 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 22:08:54.127 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:54.127 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:54.127 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 22:08:54.128 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 22:08:54.128 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 22:08:54.128 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 22:08:54.131 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 22:08:54.131 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:54.131 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:08:54.131 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 22:08:54.134 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 22:08:54.134 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 22:08:54.134 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 22:08:54.138 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 22:08:54.366 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 22:08:54.383 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[427]毫秒内初始化
+02-Dec-2021 22:08:54.406 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 22:08:54.406 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 22:08:54.414 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:08:54.447 警告 [main] org.apache.tomcat.util.digester.Digester.endElement 找不到匹配的规则[Content]
+02-Dec-2021 22:08:54.448 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 37 more
+02-Dec-2021 22:08:54.452 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[36]ms内完成
+02-Dec-2021 22:08:54.453 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 22:08:54.895 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[305]毫秒。
+02-Dec-2021 22:08:54.912 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[459]毫秒内完成
+02-Dec-2021 22:08:54.912 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 22:08:55.108 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[196]毫秒内完成
+02-Dec-2021 22:08:55.113 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 22:08:55.131 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[18]毫秒内完成
+02-Dec-2021 22:08:55.132 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 22:08:55.147 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[15]毫秒内完成
+02-Dec-2021 22:08:55.148 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 22:08:55.160 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[12]毫秒内完成
+02-Dec-2021 22:08:55.163 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 22:08:55.174 信息 [main] org.apache.catalina.startup.Catalina.start [791]毫秒后服务器启动
+02-Dec-2021 22:08:59.649 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:08:59.649 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:18:26.997 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.55
+02-Dec-2021 22:18:27.000 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Nov 10 2021 08:26:45 UTC
+02-Dec-2021 22:18:27.001 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.55.0
+02-Dec-2021 22:18:27.001 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+02-Dec-2021 22:18:27.001 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+02-Dec-2021 22:18:27.001 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+02-Dec-2021 22:18:27.001 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     D:\windowsSoftware\JDK\JDK8\jre
+02-Dec-2021 22:18:27.001 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_202-b08
+02-Dec-2021 22:18:27.002 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+02-Dec-2021 22:18:27.002 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:18:27.002 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:18:27.003 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\logging.properties
+02-Dec-2021 22:18:27.003 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Dec-2021 22:18:27.003 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+02-Dec-2021 22:18:27.003 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Dec-2021 22:18:27.006 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+02-Dec-2021 22:18:27.006 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:18:27.006 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55
+02-Dec-2021 22:18:27.007 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\temp
+02-Dec-2021 22:18:27.009 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.31]。
+02-Dec-2021 22:18:27.010 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+02-Dec-2021 22:18:27.010 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+02-Dec-2021 22:18:27.015 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1l  24 Aug 2021]
+02-Dec-2021 22:18:27.283 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+02-Dec-2021 22:18:27.298 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[450]毫秒内初始化
+02-Dec-2021 22:18:27.318 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+02-Dec-2021 22:18:27.319 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.55]
+02-Dec-2021 22:18:27.326 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 正在部署部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]。
+02-Dec-2021 22:18:27.354 警告 [main] org.apache.tomcat.util.digester.Digester.endElement 找不到匹配的规则[Content]
+02-Dec-2021 22:18:27.354 严重 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]时出错
+	java.lang.IllegalStateException: 启动子级时出错
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:698)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:696)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:690)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1889)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:583)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:473)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:319)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:946)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:927)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: org.apache.catalina.LifecycleException: 无法处理全局，每个主机或特定于上下文的context.xml文件，因此无法启动[/test]上下文。
+		at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:200)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+		... 37 more
+02-Dec-2021 22:18:27.358 信息 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 部署描述符[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\conf\Catalina\localhost\test.xml]的部署已在[30]ms内完成
+02-Dec-2021 22:18:27.359 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]
+02-Dec-2021 22:18:27.807 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom 使用[SHA1PRNG]创建会话ID生成的SecureRandom实例花费了[307]毫秒。
+02-Dec-2021 22:18:27.826 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\docs]的部署已在[467]毫秒内完成
+02-Dec-2021 22:18:27.826 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]
+02-Dec-2021 22:18:28.021 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\examples]的部署已在[195]毫秒内完成
+02-Dec-2021 22:18:28.021 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]
+02-Dec-2021 22:18:28.043 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\host-manager]的部署已在[22]毫秒内完成
+02-Dec-2021 22:18:28.044 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]
+02-Dec-2021 22:18:28.060 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\manager]的部署已在[16]毫秒内完成
+02-Dec-2021 22:18:28.061 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]
+02-Dec-2021 22:18:28.075 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[D:\CodeHub\JavaWeb\chapter05\apache-tomcat-9.0.55-windows-x64\apache-tomcat-9.0.55\webapps\ROOT]的部署已在[14]毫秒内完成
+02-Dec-2021 22:18:28.078 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+02-Dec-2021 22:18:28.090 信息 [main] org.apache.catalina.startup.Catalina.start [791]毫秒后服务器启动
+02-Dec-2021 22:18:32.465 信息 [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:18:32.465 信息 [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:18:32.486 信息 [http-nio-8080-exec-3] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-Dec-2021 22:18:32.486 信息 [http-nio-8080-exec-4] org.apache.coyote.http11.Http11Processor.service 解析 HTTP 请求 header 错误
+ 注意：HTTP请求解析错误的进一步发生将记录在DEBUG级别。
+	java.lang.IllegalArgumentException: 在方法名称中发现无效的字符串, HTTP 方法名必须是有效的符号.
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
