@@ -8,11 +8,19 @@ import javax.servlet.annotation.*;
 import javax.servlet.*;
 import java.io.IOException;
 
-@WebServlet(name = "helloServlet", value = "/helloServlet")
+@WebServlet(name = "helloServlet", value = "/helloServlet",
+        initParams = {
+                @WebInitParam(name = "username", value = "root"),
+                @WebInitParam(name = "url", value = "jdbc:mysql://localhost:3306/test")
+        })
 public class HelloServlet implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
+        System.out.println("init 初始化方法");
+        System.out.println("HelloServlet 程序的别名是：" + servletConfig.getServletName());
+        System.out.println("初始化参数 username 的值是" + servletConfig.getInitParameter("username"));
+        System.out.println("初始化参数url 的值是：" + servletConfig.getInitParameter("url"));
+        System.out.println(servletConfig.getServletContext());
     }
 
     @Override

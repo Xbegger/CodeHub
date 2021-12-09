@@ -1,0 +1,33 @@
+[2021-12-06 16:46:32,762] [INFO] [base._load_session] -> No session loaded
+[2021-12-06 16:46:32,765] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20211206-164631.log
+
+                 Total possible mutation count: 1000
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-12-06 16:46:32,767] [INFO] [base.start] -> Performing environment test
+[2021-12-06 16:46:34,773] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+socket.timeout: timed out
+
+[2021-12-06 16:46:34,775] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-12-06 16:46:37,797] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+socket.timeout: timed out
+
+[2021-12-06 16:46:37,798] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-12-06 16:46:40,812] [ERROR] [tcp.pre_test] -> Error: Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\katnip\targets\tcp.py", line 57, in pre_test
+    sock.connect((self.host, self.port))
+socket.timeout: timed out
+
+[2021-12-06 16:46:40,814] [ERROR] [tcp.pre_test] -> Failed to connect to target server, retrying...
+[2021-12-06 16:46:41,434] [INFO] [server._test_environment] -> Environment test failed

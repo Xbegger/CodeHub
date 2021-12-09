@@ -19,6 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="jsf" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -52,14 +54,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLearning" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeHub\TomcatTest\src\main\webapp" />
+      <recent name="D:\CodeHub\TomcatTest\src\main\webapp\a\b" />
+      <recent name="D:\CodeHub\TomcatTest\src" />
+      <recent name="D:\CodeHub\TomcatTest\src\main\webapp\WEB-INF" />
       <recent name="D:\CodeHub\TomcatTest\src\main\java" />
-      <recent name="D:\CodeHub\TomcatTest\src\main" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,7 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1638454001478</updated>
       <workItem from="1638454002696" duration="2951000" />
-      <workItem from="1638493585315" duration="9187000" />
+      <workItem from="1638493585315" duration="13266000" />
+      <workItem from="1638591550533" duration="14943000" />
+      <workItem from="1638676583639" duration="1086000" />
+      <workItem from="1638677691186" duration="12042000" />
+      <workItem from="1638752995052" duration="14574000" />
+      <workItem from="1638839047143" duration="1237000" />
     </task>
     <servers />
   </component>

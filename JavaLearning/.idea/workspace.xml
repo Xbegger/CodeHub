@@ -39,9 +39,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="http.certificates" />
   </component>
@@ -50,13 +55,13 @@
       <recent name="hsp_Java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HashSetExercise">
-    <configuration name="HashSet01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.HashSet01" />
+  <component name="RunManager" selected="Application.AllTypeClass">
+    <configuration name="AllTypeClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter23.AllTypeClass" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter14.*" />
+          <option name="PATTERN" value="hsp_Java.chapter23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashSetExercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.courseExercise.chapter14.HashSetExercise" />
+    <configuration name="Class02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter23.Class02" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.courseExercise.chapter14.*" />
+          <option name="PATTERN" value="hsp_Java.chapter23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashSetSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.HashSetSource" />
+    <configuration name="GenericExtends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter15.GenericExtends" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter14.*" />
+          <option name="PATTERN" value="hsp_Java.chapter15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashSet_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.HashSet_" />
+    <configuration name="GetClass_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter23.GetClass_" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter14.*" />
+          <option name="PATTERN" value="hsp_Java.chapter23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter14.SetMethod" />
+    <configuration name="JUnit_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter15.JUnit_" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter14.*" />
+          <option name="PATTERN" value="hsp_Java.chapter15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HashSetExercise" />
-        <item itemvalue="Application.HashSetSource" />
-        <item itemvalue="Application.HashSet01" />
-        <item itemvalue="Application.HashSet_" />
-        <item itemvalue="Application.SetMethod" />
+        <item itemvalue="Application.AllTypeClass" />
+        <item itemvalue="Application.GetClass_" />
+        <item itemvalue="Application.Class02" />
+        <item itemvalue="Application.JUnit_" />
+        <item itemvalue="Application.GenericExtends" />
       </list>
     </recent_temporary>
   </component>
@@ -163,10 +168,23 @@
       <workItem from="1637988023192" duration="17817000" />
       <workItem from="1638148814988" duration="2524000" />
       <workItem from="1638268289989" duration="120000" />
+      <workItem from="1638840299257" duration="9918000" />
+      <workItem from="1638926160579" duration="9177000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
