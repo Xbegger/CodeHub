@@ -71,27 +71,28 @@ def fuzz(params):
                                                                     VariableSpecification=0x12,#RandByte(), #结构的主要类型 对于读/写消息，它总是具有值0x12，代表变量规范
                                                                     AREAType=RandEnumKeys(S7_AREA_TYPE),#RandByte(132), # 寻址变量的存储区域， 0x84为数据库 0x80为 Direct peripheral access    #TODO 
                                                                     BlockNum=RandShort())),  # DB块号
-                                                            Data=S7WriteVarDataItemsReq(
-                                                                ReturnCode=RandByte(),
-                                                                TransportSize=0x07,  # 0x07 Real access, len is in bytes
+                                                            # Data=S7WriteVarDataItemsReq(
+                                                                # ReturnCode=RandByte(),
+                                                                # TransportSize=0x07,  # 0x07 Real access, len is in bytes
                                                                 # Data=RandTermString(,'\x00'),  # 随机生成数据，RandNum()随机指定长度 等价于random.randint(1,20)
                                                                 # Data=''.join(struct.pack('!i', RandNum(1,20)))
-                                                                Data=struct.pack('!f', RandSShort())
-                                                            )
+                                                                # Data=struct.pack('!f', RandSShort())
+                                                            # )
                                                         )  # 提交SNAP工作内容，发送出的数据包
     
-    print(RandBinFloat(1,20))
-    print(struct.pack('!f', RandBinFloat(1,20)))
+    # print(RandBinFloat(1,20))
+    # print(struct.pack('!f', RandBinFloat(1,20)))
     # print(RawVal(struct.pack('!f', 1231)))
     print(READ_SZL_PACKET)
     # 设置筛选关键字
     # initSet=InitSet()
     # InitSet.setFilterKey(READ_SZL_PACKET,READ_SZL_PACKET)
 
-    # READ_SZL_TEMPLATE = Template(name='Data write时，Parameter中ItemCount=0x76', multiple=6, fields=[
-    #     ScapyField(READ_SZL_PACKET, name='read szl', # 处理数据包的基础方法
-    #                fuzzable=True, fuzz_count=params['FUZZ_COUNT']),
-    # ])  # 发送数据包作为模板，对该模板进行模糊化变异。  ItemCount=RandByte()的部分会变异。TODO 向期望方向变异。
+    READ_SZL_TEMPLATE = Template(name='Data write时，Parameter中ItemCount=0x76', multiple=6, fields=[
+        ScapyField(READ_SZL_PACKET, name='read szl', # 处理数据包的基础方法
+                   fuzzable=True, fuzz_count=params['FUZZ_COUNT']),
+    ])  # 发送数据包作为模板，对该模板进行模糊化变异。  ItemCount=RandByte()的部分会变异。TODO 向期望方向变异。
+    print(READ_SZL_TEMPLATE.render().tobytes())
     # model = GraphModel()
     # model.connect(COTP_CR_TEMPLATE)
     # model.connect(COTP_CR_TEMPLATE, SETUP_COMM_PARAMETER_TEMPLATE)

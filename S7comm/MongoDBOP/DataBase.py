@@ -1,4 +1,3 @@
-import re
 from pymongo import MongoClient
 
 class MongoDBError(Exception):
@@ -47,9 +46,9 @@ class DataBase():
     # CURD
     ## 插入文档
     '''
-    @function：向指定的集合中插入文档
-    @param collection：数据库的集合
-    @param items：要插入的文档列表
+    @function:向指定的集合中插入文档
+    @param collection:数据库的集合
+    @param items:要插入的文档列表
     '''
     def insert(collection, items):
         if(collection == None):
@@ -63,7 +62,7 @@ class DataBase():
 
     ## 查询文档
     '''
-    @function：从指定的集合中查询与query 字段值相同的一个文档
+    @function:从指定的集合中查询与query 字段值相同的一个文档
     @param collection:
     @param query: dict 查询文档的条件
     '''
@@ -71,7 +70,7 @@ class DataBase():
         return collection.find_one(query)
 
     '''
-    @function：从指定大的集合中查询与 query 字段值相同的所有文档，返回 show中字段为设置为 1 的字段
+    @function:从指定大的集合中查询与 query 字段值相同的所有文档，返回 show中字段为设置为 1 的字段
     @param query:
     @param show:决定在返回文档的哪些字段
     '''
