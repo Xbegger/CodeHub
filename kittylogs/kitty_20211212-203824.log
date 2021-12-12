@@ -1,0 +1,25 @@
+[2021-12-12 20:38:24,828] [INFO] [base._load_session] -> No session loaded
+[2021-12-12 20:38:24,832] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: TcpTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20211212-203824.log
+
+                 Total possible mutation count: 0
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2021-12-12 20:38:24,834] [INFO] [base.start] -> Performing environment test
+[2021-12-12 20:38:24,835] [INFO] [base._test_info] -> Current test: -1
+[2021-12-12 20:38:24,835] [INFO] [server.transmit] -> request(22): 0300001611e00000000100c0010ac1020100c2020200
+[2021-12-12 20:38:24,835] [INFO] [server.transmit] -> response(22): 0300001611d00001000100c0010ac1020100c2020200
+[2021-12-12 20:38:24,835] [ERROR] [base.start] -> Error occurred while fuzzing: TypeError("unsupported operand type(s) for -: 'NoneType' and 'int'",)
+[2021-12-12 20:38:24,836] [ERROR] [base.start] -> Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\S7comm\lib\site-packages\kitty\fuzzers\base.py", line 390, in start
+    self.model.skip(self._test_list.current())
+  File "D:\windowsSoftware\Anaconda\envs\S7comm\lib\site-packages\kitty\model\high_level\graph.py", line 127, in skip
+    skipped += node.skip(count - skipped)
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'
+

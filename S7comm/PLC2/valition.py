@@ -1,4 +1,5 @@
-from random import Random
+ n 
+ from random import Random
 from scapy.all import *
 from MIPlugin import MIPlugin
 from BaseClass import Base  
