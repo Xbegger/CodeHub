@@ -227,6 +227,18 @@ class S7Target(ServerTarget):
                 return data_type
         return None
 
+    def onlinePLC(self, timeout = 3, retry=1):
+        self.logger.info("checking whether the PLC is online")
+        packet = Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(op=1, pdst=self._ip, psrc=self._src_ip)
+
+        recv = srp1(packet, retry=retry, timeout=timeout)
+        if(recv != None):
+            self.logger.info("the PLC is online")
+            return True
+
+        self.logger.info("the PLC is offline")
+        return False   
+
 
 class S7TargetException(Exception):
     pass

@@ -5,11 +5,13 @@ class PLCController(BaseController):
 
     def __init__(self, name, logger=None, victim_alive_check_delay=0.3):
         super().__init__(name, logger=logger, victim_alive_check_delay=victim_alive_check_delay)
-        
 
+    def setPlug(self, plug):
+        self.plug = plug
 
     # @Override
     def setup(self):
+        self.plug.discover()
         pass
 
     # @Override

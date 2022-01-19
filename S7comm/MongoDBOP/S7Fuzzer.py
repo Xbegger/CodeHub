@@ -1,4 +1,6 @@
 from kitty.fuzzers.base import BaseFuzzer
+import threading
+
 
 class S7Fuzzer(BaseFuzzer):
     '''
@@ -18,6 +20,7 @@ class S7Fuzzer(BaseFuzzer):
         :param option_line: cmd line options to the fuzzer
         '''
         super(S7Fuzzer, self).__init__(name, logger, option_line)
+        self._PLC_crush = threading.Event()
 
 
 
@@ -31,12 +34,21 @@ class S7Fuzzer(BaseFuzzer):
                 self.logger.error('Error occurred while fuzzing: %s', repr(e))
                 self.logger.error(traceback.format_exc())
                 break
-    
+
+    def _check_crush(self):
+        if not self._PLC_crush.is_set():
+            self.logger.info('fuzzer paused, waiting for handle crush')
+            self.binary_search()
+            self._PLC_crush.wait()
+            self.logger.info('resume command received, continue running')
+        pass
+
     def _run_sequence(self, sequence):
         '''
         Run a single sequence
         '''
         self._check_pause()# _continue_event
+        self._check_crush()
         self._pre_test()#target.pre_test()
         session_data = self.target.get_session_data()
         self._test_info() 

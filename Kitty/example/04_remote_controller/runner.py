@@ -14,7 +14,8 @@ t1 = Template(name='T1', fields=[
 
 '''Write content to files'''
 ##      Target
-target = FileTarget('FileTarget', 'tmp/', 'fuzzed')
+path = 'D:/CodeHub/Kitty/example/01_file_generator/tmp/'
+target = FileTarget('FileTarget', path, 'fuzzed')
 
 '''Connect to actual actor(controller) over RPC'''
 

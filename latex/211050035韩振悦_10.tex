@@ -1,0 +1,78 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    1. \\
+    \begin{gather*}  
+        \min \quad f(x) = 4 x_1 - 3 x_2\\
+        \rm{s.t.} \quad -(x_1 - 3)^2 + x_2 + 1 \ge 0\\
+        \qquad 4 - x_1 - x_2 \ge 0\\
+        \qquad x_2 + 7 \ge 0\\
+        \\
+        L(x_1, x_2, \mu_1, \mu_2, \mu_3) = 4x_1 - 3x_2
+            + \mu_1\left[ -(x_1 -3)^2 + x_2 + 1\right] 
+            + \mu_2 (4 - x_1 - x_2)
+            + \mu_3 (x_2 + 7)\\
+        \\
+        \frac{\partial L}{\partial x_1} = 4 - 2 \mu_1 (x_1 - 3) - \mu_2 = 0\\
+        \frac{\partial L}{\partial x_2} = -3 + \mu_1 - \mu_2 + \mu_3 = 0\\
+        \mu_1 \left[-(x_1 - 3)^2 + x_2 + 1\right] = 0\\
+        \mu_2 (4 - x_1 - x_2) = 0\\
+        \mu_3 (x_2 + 7) = 0\\
+        \mu_1, \mu_2, \mu_3 \ge 0
+    \end{gather*}
+    \begin{gather*}
+    \mu_1 = \mu_2 = \mu_3 = 0 \rightarrow \text{不满足KT条件}\\
+    \mu_1 = \mu_2 = 0, x_2 + 7 = 0 \rightarrow \text{不满足KT条件}\\
+    \mu_1 = \mu_3 = 0, 4 - x_1 - x_2 = 0 \rightarrow \text{不满足KT条件}\\
+    \mu_1 = 0, 4 - x_1 - x_2 = 0, x_2 + 7 = 0 \rightarrow x_1 = 11, x_2 = -7, \mu_2 = 4, \mu_3 = 1\\
+    \mu_2 = \mu_3 = 0, \left[-(x_1 - 3)^2 + x_2 + 1\right] = 0 \rightarrow x_1 = \frac{7}{3}, x_2 = -\frac{5}{9}, \mu_1 = -3\\
+    \mu_2 = 0,  \left[-(x_1 - 3)^2 + x_2 + 1\right] = 0 , x_2 + 7 = 0 \rightarrow \text{不满足KT条件}\\
+    \mu_3 = 0,  \left[-(x_1 - 3)^2 + x_2 + 1\right] = 0 , 4 - x_1 - x_2 = 0 \rightarrow 
+        x_1 = 1, x_2 = 3, \mu_1 = -\frac{1}{3}, \mu_2 = \frac{8}{3}\\\qquad \qquad
+        x_1 = 4, x_2 = 0, \mu_1 = \frac{1}{3}, \mu_2 = \frac{10}{3}\\
+    \left[-(x_1 - 3)^2 + x_2 + 1\right] = 0 , 4 - x_1 - x_2 = 0 , x_2 + 7 = 0 \rightarrow \text{不满足KT条件}\\
+    \\ 
+    \text{因此结果是} x_1^* = 1, x_2^* = 3, f(x^*) = -5
+    \end{gather*}
+    2. 
+    \begin{gather*}
+        \max \quad f(x, y) = xy\\
+        \rm{s.t.} \quad x + y^2 \le 2\\
+        \qquad x, y \ge 0\\
+        \\
+        L(x, y, \mu_1, \mu_2, \mu_3) = xy + \mu_1 (x + y^2 - 2) + \mu_2 (-x) + \mu_3 (-y)\\
+        \frac{\partial L}{\partial x} = y + \mu_1 - \mu_2 = 0\\
+        \frac{\partial L}{\partial y} = x + 2 \mu_1 y - \mu_3 = 0\\
+        \mu_1 (x + y^2 -2) = 0\\
+        \mu_2 x = 0\\
+        \mu_3 y = 0\\
+        \mu_1, \mu_2, \mu_3 \ge 0
+    \end{gather*}
+    \begin{gather*}
+        \mu_1 = \mu_2 = \mu_3 = 0 \rightarrow x=0, y=0\\
+        \mu_1 = \mu_2 = 0, y = 0 \rightarrow x = \mu_3, y = 0\\
+        \mu_1 = \mu_3 = 0, x = 0 \rightarrow x=0, y = \mu_2\\
+        \mu_1 = 0, x = 0, y = 0 \rightarrow x=0, y=0, \mu_2 =0, \mu_3=0\\
+        \mu_2 = \mu_3 = 0, (x + y^2 -2) = 0 \rightarrow\text{不满足KT条件}\\
+        \mu_2 = 0 ,(x + y^2 -2) = 0 , y = 0\rightarrow x=2, y=0, \mu_1=0, \mu_3 =2\\
+        \mu_3 = 0 ,(x + y^2 -2) = 0 , x = 0\rightarrow x = 0, y=\sqrt{2}, \mu_1 = 0, \mu_2 = \sqrt{2}\\
+        (x + y^2 -2) = 0 , x = 0, y = 0 \rightarrow \text{不满足KT条件}\\
+        \\
+        \text{综上满足KT条件的点有}(0,0),(0,\sqrt{2}),(2,0)
+    \end{gather*}
+\end{document}

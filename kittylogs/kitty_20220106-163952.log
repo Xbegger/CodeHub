@@ -1,0 +1,47 @@
+[2022-01-06 16:39:52,557] [INFO] [base._load_session] -> No session loaded
+[2022-01-06 16:39:52,560] [INFO] [base._start_message] -> 
+                 --------------------------------------------------
+                 Starting fuzzing session
+                 Target: FileTarget
+                 UI: WebInterface listening on 127.0.0.1:26001
+                 Log: ./kittylogs/kitty_20220106-163952.log
+
+                 Total possible mutation count: 91
+                 --------------------------------------------------
+                                 Happy hacking
+                 --------------------------------------------------
+            
+[2022-01-06 16:39:52,566] [INFO] [base.start] -> Performing environment test
+[2022-01-06 16:39:52,570] [INFO] [base._test_info] -> Current test: -1
+[2022-01-06 16:39:52,571] [INFO] [server.transmit] -> request(18): 5468652064656661756c7420737472696e67
+[2022-01-06 16:39:52,572] [ERROR] [server.transmit] -> target.transmit - failure in send (exception: 'hex' is not a text encoding; use codecs.decode() to handle arbitrary codecs)
+[2022-01-06 16:39:52,573] [ERROR] [server.transmit] -> Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\targets\server.py", line 93, in transmit
+    self._send_to_target(payload)
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\katnip\targets\file.py", line 73, in _send_to_target
+    self.logger.debug('data (start): %s', data[:end].decode('hex'))
+LookupError: 'hex' is not a text encoding; use codecs.decode() to handle arbitrary codecs
+
+[2022-01-06 16:39:52,580] [INFO] [server._test_environment] -> Environment test failed
+[2022-01-06 16:39:52,580] [ERROR] [base.start] -> Error occurred while fuzzing: Exception('status must be one of: passed, failed, error')
+[2022-01-06 16:39:52,582] [ERROR] [base.start] -> Traceback (most recent call last):
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\fuzzers\base.py", line 385, in start
+    self._test_environment()
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\fuzzers\server.py", line 54, in _test_environment
+    if self._run_sequence(sequence):
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\fuzzers\server.py", line 76, in _run_sequence
+    return self._post_test()
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\fuzzers\base.py", line 435, in _post_test
+    self.target.post_test(self.model.current_index())
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\targets\server.py", line 129, in post_test
+    super(ServerTarget, self).post_test(test_num)
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\targets\base.py", line 97, in post_test
+    controller_report = self.controller.get_report()
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\remote\actor.py", line 41, in get_report
+    report = Report.from_dict(report_dict)
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\data\report.py", line 205, in from_dict
+    report.set_status(Report._decode(d['status'], encoding))
+  File "D:\windowsSoftware\Anaconda\envs\miio\lib\site-packages\kitty\data\report.py", line 128, in set_status
+    raise Exception('status must be one of: %s' % (', '.join(Report.allowed_statuses)))
+Exception: status must be one of: passed, failed, error
+

@@ -18,7 +18,9 @@ from icssploit.protocols.s7comm import *
 # bNum = '0100'.encode('utf-8')
 # print(bNum)
 
-# temp = b'0123'
+temp = b'A123'
+temp = temp.decode()
+print(temp)
 # print(type(temp), temp) 
 # temp = temp.hex()
 # print(temp)
@@ -46,6 +48,7 @@ print(b)
 
 a = "b'\\x33\\x01\\x02\\x03'"
 a=bytes(a, 'utf-8')
+print(a)
 payload = a.decode('unicode_escape')[2:-1].encode()
 print(type(payload))
 print(payload)

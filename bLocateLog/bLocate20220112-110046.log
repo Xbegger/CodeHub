@@ -1,0 +1,139 @@
+[2022-01-12 11:00:47,238] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect request]0300001902f08032010000010000080000f000000a000a00f0
+[2022-01-12 11:00:47,239] [INFO] [MyS7Client.send_receive_s7_packet] -> [Connect responde]0300001b02f080320300000100000800000000f0000003000300f0
+[2022-01-12 11:00:47,362] [INFO] [MyS7Client.send_receive_my_packet] -> [request]1: 0300002102f080320700000200000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:47,363] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000200000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:47,587] [INFO] [MyS7Client.send_receive_my_packet] -> [request]2: 0300002102f080320700000300000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:47,605] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000300000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:47,832] [INFO] [MyS7Client.send_receive_my_packet] -> [request]3: 0300002102f080320700000400000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:47,832] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000400000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:48,053] [INFO] [MyS7Client.send_receive_my_packet] -> [request]4: 0300002102f080320700000500000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:48,054] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000500000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:48,265] [INFO] [MyS7Client.send_receive_my_packet] -> [request]5: 0300002102f080320700000600000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:48,266] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000600000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:48,482] [INFO] [MyS7Client.send_receive_my_packet] -> [request]6: 0300002102f080320700000700000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:48,482] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000700000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:48,694] [INFO] [MyS7Client.send_receive_my_packet] -> [request]7: 0300002102f080320700000800000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:48,695] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000800000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:48,911] [INFO] [MyS7Client.send_receive_my_packet] -> [request]8: 0300002102f080320700000900000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:48,912] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000900000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:49,145] [INFO] [MyS7Client.send_receive_my_packet] -> [request]9: 0300002102f080320700000a00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:49,146] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000a00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:49,715] [INFO] [MyS7Client.send_receive_my_packet] -> [request]10: 0300002102f080320700000b00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:49,716] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000b00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:49,928] [INFO] [MyS7Client.send_receive_my_packet] -> [request]11: 0300002102f080320700000c00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:49,929] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000c00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:50,144] [INFO] [MyS7Client.send_receive_my_packet] -> [request]12: 0300002102f080320700000d00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:50,145] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000d00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:50,359] [INFO] [MyS7Client.send_receive_my_packet] -> [request]13: 0300002102f080320700000e00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:50,360] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000e00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:50,606] [INFO] [MyS7Client.send_receive_my_packet] -> [request]14: 0300002102f080320700000f00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:50,606] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700000f00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:50,875] [INFO] [MyS7Client.send_receive_my_packet] -> [request]15: 0300002102f080320700001000000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:50,875] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001000000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:51,091] [INFO] [MyS7Client.send_receive_my_packet] -> [request]16: 0300002102f080320700001100000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:51,092] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001100000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:51,382] [INFO] [MyS7Client.send_receive_my_packet] -> [request]17: 0300002102f080320700001200000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:51,382] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001200000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:51,596] [INFO] [MyS7Client.send_receive_my_packet] -> [request]18: 0300002102f080320700001300000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:51,597] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001300000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:51,844] [INFO] [MyS7Client.send_receive_my_packet] -> [request]19: 0300002102f080320700001400000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:51,845] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001400000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:52,076] [INFO] [MyS7Client.send_receive_my_packet] -> [request]20: 0300002102f080320700001500000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:52,077] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001500000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:52,305] [INFO] [MyS7Client.send_receive_my_packet] -> [request]21: 0300002102f080320700001600000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:52,305] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001600000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:52,519] [INFO] [MyS7Client.send_receive_my_packet] -> [request]22: 0300002102f080320700001700000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:52,520] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001700000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:52,737] [INFO] [MyS7Client.send_receive_my_packet] -> [request]23: 0300002102f080320700001800000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:52,738] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001800000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:52,972] [INFO] [MyS7Client.send_receive_my_packet] -> [request]24: 0300002102f080320700001900000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:52,973] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001900000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:53,186] [INFO] [MyS7Client.send_receive_my_packet] -> [request]25: 0300002102f080320700001a00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:53,186] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001a00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:53,402] [INFO] [MyS7Client.send_receive_my_packet] -> [request]26: 0300002102f080320700001b00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:53,402] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001b00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:53,628] [INFO] [MyS7Client.send_receive_my_packet] -> [request]27: 0300002102f080320700001c00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:53,629] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001c00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:53,861] [INFO] [MyS7Client.send_receive_my_packet] -> [request]28: 0300002102f080320700001d00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:53,862] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001d00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:54,089] [INFO] [MyS7Client.send_receive_my_packet] -> [request]29: 0300002102f080320700001e00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:54,089] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001e00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:54,302] [INFO] [MyS7Client.send_receive_my_packet] -> [request]30: 0300002102f080320700001f00000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:54,302] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700001f00000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:54,517] [INFO] [MyS7Client.send_receive_my_packet] -> [request]31: 0300002102f080320700002000000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:54,518] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700002000000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:54,738] [INFO] [MyS7Client.send_receive_my_packet] -> [request]32: 0300002102f080320700002100000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:54,739] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700002100000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:54,990] [INFO] [MyS7Client.send_receive_my_packet] -> [request]33: 0300002102f080320700002200000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:54,990] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700002200000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:55,206] [INFO] [MyS7Client.send_receive_my_packet] -> [request]34: 0300002102f080320700002300000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:55,207] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700002300000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:55,424] [INFO] [MyS7Client.send_receive_my_packet] -> [request]35: 0300002102f080320700002400000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:55,425] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700002400000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:55,640] [INFO] [MyS7Client.send_receive_my_packet] -> [request]36: 0300001f02f080320100002500000e00000401120a10010003000083000001
+[2022-01-12 11:00:55,641] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300001a02f0803203000025000002000500000401ff03000100
+[2022-01-12 11:00:57,596] [INFO] [MyS7Client.send_receive_my_packet] -> [request]37: 0300002102f080320700002600000800080001120411440100ff090004001c0000
+[2022-01-12 11:00:57,596] [INFO] [MyS7Client.send_receive_my_packet] -> [Connect responde]0300002102f080320700002600000c000400011208128401010000d4010a000000
+[2022-01-12 11:00:59,804] [INFO] [MyS7Client.send_receive_my_packet] -> [request]38: 0300002102f080320700002700000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:02,013] [INFO] [MyS7Client.send_receive_my_packet] -> [request]39: 0300002102f080320700002800000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:04,220] [INFO] [MyS7Client.send_receive_my_packet] -> [request]40: 0300002102f080320700002900000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:06,428] [INFO] [MyS7Client.send_receive_my_packet] -> [request]41: 0300002102f080320700002a00000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:08,634] [INFO] [MyS7Client.send_receive_my_packet] -> [request]42: 0300002102f080320700002b00000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:10,842] [INFO] [MyS7Client.send_receive_my_packet] -> [request]43: 0300002102f080320700002c00000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:13,048] [INFO] [MyS7Client.send_receive_my_packet] -> [request]44: 0300002102f080320700002d00000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:15,257] [INFO] [MyS7Client.send_receive_my_packet] -> [request]45: 0300002102f080320700002e00000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:16,986] [INFO] [MyS7Client.send_receive_my_packet] -> [request]46: 0300002102f080320700002f00000800080001120411440100ff090004001c0000
+[2022-01-12 11:01:17,191] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:17,398] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:17,606] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:17,811] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:18,015] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:18,221] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:18,427] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:18,630] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:18,834] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:19,041] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:19,246] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:19,450] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:19,653] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:19,857] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:20,063] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:20,268] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:20,470] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:20,674] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:20,880] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:21,087] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:21,290] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:21,495] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:21,700] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:21,908] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:22,112] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:22,320] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:22,525] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:22,730] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:22,933] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:23,136] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:23,340] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:23,543] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:23,748] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:23,954] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:24,160] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:24,366] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:24,572] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:24,774] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:24,981] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:25,183] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:25,388] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:25,592] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:25,796] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:26,002] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:26,208] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:26,412] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:26,616] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:26,820] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:27,026] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:27,233] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:27,440] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:27,648] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:27,853] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)
+[2022-01-12 11:01:28,058] [ERROR] [MyS7Client.send_receive_my_packet] -> file descriptor cannot be a negative integer (-1)

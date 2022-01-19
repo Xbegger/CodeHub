@@ -1,0 +1,50 @@
+\documentclass{article}  
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\usepackage{geometry}
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm}
+\setlength{\parindent}{12pt} %自然段第一行的缩进量为12pt
+\setlength{\parskip}{10pt plus1pt minus1pt}
+%自然段之间的距离为10pt，并可在8pt到11pt之间变化
+\setlength{\baselineskip}{8pt plus2pt minus1pt}
+%行间距为8pt，并可在7pt到10pt之间变化
+\setlength{\textheight}{21true cm}%版面高为21厘米
+\setlength{\textwidth}{14.5true cm}%版面宽为14.5厘米
+
+
+
+\begin{document}
+    1. $x_1, x_2, x_3$的数学模型\\
+    \begin{gather*}
+        F(x) = x_1x3t_1 - y(1 + x_1t_1 + x_2t_2)\\
+        F = [F_1(x), F_2(x), F_3(x), F_4(x), F_5(x)]
+        \begin{cases}
+            0.13 = \frac{x_1x_3}{1 + x_1 + x_2}\\
+            0.22 = \frac{2 \cdot x_1 x_3}{1 + 2x_1 + x_2}\\
+            0.08 = \frac{x_1x_3}{1 + x_1 + 2x_2}\\
+            0.13 = \frac{2x_1x_3}{1 + 2x_1 + 2x_2}\\
+            0.19 = \frac{0.1 \cdot x_1 x_3}{1 + 0.1 \cdot x_1}\\
+        \end{cases}\\
+        \begin{cases}
+            F_1(x) = x_1x_3 - 0.13(1 + x_1 + x_2)\\
+            F_2(x) = 2 \cdot x_1 x_3 - 0.22(1 + 2x_1 + x_2)\\
+            F_3(x) = x_1x_3 - 0.08(1 + x_1 + 2x_2)\\
+            F_4(x) = 2x_1x_3 - 0.13(1 + 2x_1 + 2x_2)\\
+            F_5(x) = x_1x_3 - 0.19(10 + x_1)
+        \end{cases}\\
+        \text{最小二乘法模型:}\min f(x) = \frac{1}{2}||F(x)||^2 
+                                       = \frac{1}{2} \sum_{i=1}^{5}F^2_i(x)
+    \end{gather*}
+    2. 
+    \begin{gather*}
+        \bigtriangledown F_1(x) = [x3 - 0.13, -0.13, x_1]\\
+        \bigtriangledown F_2(x) = [2 x_3, -0.22, 2x_1]\\
+        \bigtriangledown F_3(x) = [x_3, -0.16, x_1]\\
+        \bigtriangledown F_4(x) = [2x_3, -0.26, 2x_1]\\
+        \bigtriangledown F_5(x) = [x_3, 0, x_1]\\
+        \\
+        x_{k+1} = x_k - (J^T_FJ_F)^{-1}J_FF
+    \end{gather*}
+\end{document}

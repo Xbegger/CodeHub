@@ -22,6 +22,10 @@ class MIPlugin():
             ip, token, start_id, debug, lazy_discover, timeout
         )
 
+    def discover(self):
+        self._protocol.send_handshake()
+
+
     def send(
         self,
         command: str,

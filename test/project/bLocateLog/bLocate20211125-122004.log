@@ -1,0 +1,2 @@
+[2021-11-25 12:20:04,211] [INFO] [MyS7Client.onlinePLC] -> checking whether the PLC is online
+[2021-11-25 12:20:06,750] [INFO] [MyS7Client.onlinePLC] -> the PLC is online

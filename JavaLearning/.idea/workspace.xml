@@ -48,20 +48,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="http.certificates" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hsp_Java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AllTypeClass">
-    <configuration name="AllTypeClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter23.AllTypeClass" />
+  <component name="RunManager" selected="Application.ThreadMethod02">
+    <configuration name="SellTicket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter17.SellTicket" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter23.*" />
+          <option name="PATTERN" value="hsp_Java.chapter17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Class02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter23.Class02" />
+    <configuration name="Thread03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter17.Thread03" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter23.*" />
+          <option name="PATTERN" value="hsp_Java.chapter17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenericExtends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter15.GenericExtends" />
+    <configuration name="ThreadExit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter17.ThreadExit" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter15.*" />
+          <option name="PATTERN" value="hsp_Java.chapter17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetClass_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter23.GetClass_" />
+    <configuration name="ThreadMethod01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter17.ThreadMethod01" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter23.*" />
+          <option name="PATTERN" value="hsp_Java.chapter17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JUnit_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter15.JUnit_" />
+    <configuration name="ThreadMethod02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hsp_Java.chapter17.ThreadMethod02" />
       <module name="JavaLearning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hsp_Java.chapter15.*" />
+          <option name="PATTERN" value="hsp_Java.chapter17.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AllTypeClass" />
-        <item itemvalue="Application.GetClass_" />
-        <item itemvalue="Application.Class02" />
-        <item itemvalue="Application.JUnit_" />
-        <item itemvalue="Application.GenericExtends" />
+        <item itemvalue="Application.ThreadMethod02" />
+        <item itemvalue="Application.ThreadMethod01" />
+        <item itemvalue="Application.ThreadExit" />
+        <item itemvalue="Application.SellTicket" />
+        <item itemvalue="Application.Thread03" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +173,8 @@
       <workItem from="1638268289989" duration="120000" />
       <workItem from="1638840299257" duration="9918000" />
       <workItem from="1638926160579" duration="9177000" />
+      <workItem from="1641465334124" duration="14000" />
+      <workItem from="1641465362733" duration="8609000" />
     </task>
     <servers />
   </component>
@@ -186,5 +191,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

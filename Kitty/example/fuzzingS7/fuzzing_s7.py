@@ -57,6 +57,9 @@ READ_SZL_TEMPLATE = Template(name="read szl template", fields=[
     ScapyField(READ_SZL_PACKET, name="read szl", fuzzable=True, fuzz_count=1000),
 ])
 
+print(str(READ_SZL_PACKET))
+print(str(READ_SZL_PACKET))
+print(str(READ_SZL_PACKET))
 # payload = READ_SZL_TEMPLATE.render().tobytes().decode('unicode_escape')[2:-1].encode()
 # payload = READ_SZL_TEMPLATE.render().tobytes().decode('unicode_escape')[2:-1].encode()
 # print(type(payload))
